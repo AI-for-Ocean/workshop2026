@@ -55,8 +55,8 @@
 - 9:40–10:00 — Lightning Talk — Aidan Janney (UCAR / NCAR) — Regional Emulation of MOM6: Development and Future Directions
 - 10:00–10:20 — Lightning Talk — Yingjun Zhang (SIO, UCSD) — TBD
 - 10:20–10:50 — Coffee Break
-- 10:50–11:10 — Lightning Talk — Yue Bai (SIO, UCSD) — Can we use machine learning to represent subgrid vertical mixing in the upper ocean?
-- 11:10–11:30 — Lightning Talk — Alli Ho (U Hawaii at Manoa) — TBD
+- 10:50–11:10 — Lightning Talk — Yue (Luna) Bai (SIO, UCSD) — Can we use machine learning to represent subgrid vertical mixing in the upper ocean?
+- 11:10–11:30 — Lightning Talk — Allison (Alli) Ho (U Hawaii at Manoa) — TBD
 - 11:30–11:50 — Lightning Talk — Minghai Huang (TAMU) — TBD
 - 11:50–12:10 — Lightning Talk — TBD
 - 12:10–13:40 — Lunch
