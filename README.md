@@ -52,7 +52,7 @@
 
 - 9:00–9:20 — Lightning Talk — Martin Kolster (University of Colorado Boulder) — Toward Emulator-Enabled Integration of Satellite Altimetry and Climate Models
 - 9:20–9:40 — Lightning Talk — Horim Kim (MIT) — Connecting marine nitrous oxide emissions to Ocean vertical transport
-- 9:40–10:00 — Lightning Talk — Aidan Janney (UCAR / NCAR) — TBD
+- 9:40–10:00 — Lightning Talk — Aidan Janney (UCAR / NCAR) — Regional Emulation of MOM6: Development and Future Directions
 - 10:00–10:20 — Lightning Talk — Yingjun Zhang (SIO, UCSD) — TBD
 - 10:20–10:50 — Coffee Break
 - 10:50–11:10 — Lightning Talk — Yue Bai (SIO, UCSD) — Can we use machine learning to represent subgrid vertical mixing in the upper ocean?
