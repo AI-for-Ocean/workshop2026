@@ -1,0 +1,55 @@
+---
+import nasaLogo from "../assets/sponsors/nasa.webp";
+import nsfLogo from "../assets/sponsors/nsf.webp";
+---
+
+<section class="sponsors-section">
+    <h2>Our Sponsors</h2>
+    <div class="sponsor-grid">
+        <div class="sponsor-card">
+            <img src={nasaLogo.src} alt="NASA logo" />
+            <p>NASA</p>
+        </div>
+        <div class="sponsor-card">
+            <img src={nsfLogo.src} alt="NSF logo" />
+            <p>NSF</p>
+        </div>
+    </div>
+</section>
+
+<style>
+    .sponsors-section {
+        background: #eaf6ff;
+        padding: 25px;
+        text-align: center;
+    }
+
+    .sponsor-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(180px, 240px));
+        justify-content: center;
+        gap: 80px;
+    }
+
+    .sponsor-card {
+        background: #fff;
+        border: 1px solid #dbeafe;
+        border-radius: 12px;
+        padding: 16px;
+    }
+
+    .sponsor-card img {
+        width: 100%;
+        max-width: 100px;
+        height: 100px;
+        object-fit: contain;
+        display: block;
+        margin: 0 auto 10px;
+    }
+
+    .sponsor-card p {
+        margin: 0;
+        font-weight: 600;
+        color: #0f172a;
+    }
+</style>

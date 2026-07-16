@@ -1,0 +1,26 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TopBar from "../components/TopBar.astro";
+import Welcome from "../components/Welcome.astro";
+import About from "../components/About.astro"
+import Agenda from "../components/Agenda.astro"
+import Sponsors from "../components/Sponsors.astro";
+import Footer from "../components/Footer.astro"
+---
+
+<Layout>
+	<TopBar />
+
+	<Welcome />
+	<section id="about" class="About">
+		<About />
+	</section>
+	<section id="agenda" class="Agenda">
+		<Agenda />
+	</section>
+	<section id="sponsors" class="section">
+		<Sponsors />
+	</section>
+
+	<Footer />
+</Layout>

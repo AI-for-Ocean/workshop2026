@@ -1,0 +1,284 @@
+---
+const RAW_URL =
+    "https://raw.githubusercontent.com/AI-for-Ocean/workshop2026/refs/heads/main/README.md";
+const startMinutes = 9 * 60;
+const endMinutes = 17 * 60;
+const slotMinutes = 10;
+
+const times: string[] = [];
+for (let t = startMinutes; t <= endMinutes; t += slotMinutes) {
+    const h = Math.floor(t / 60);
+    const m = t % 60;
+    const hh = String(h).padStart(2, "0");
+    const mm = String(m).padStart(2, "0");
+    times.push(`${hh}:${mm}`);
+}
+
+const md = await fetch(RAW_URL).then((r) => r.text());
+const lines = md.split("\n");
+
+type ParsedEvent = {
+    start: number;
+    end: number;
+    title: string;
+    color: string;
+};
+type DayAgenda = {
+    label: string;
+    events: ParsedEvent[];
+};
+const palette = ["#DBEAFE", "#DCFCE7", "#FCE7F3", "#FEF3C7", "#EDE9FE"];
+const timeRe =
+    /^-\s*(\d{1,2}):(\d{2})\s*[–-]\s*(\d{1,2}):(\d{2})\s*[—-]\s*(.+)$/;
+const days: DayAgenda[] = [];
+let currentDay: DayAgenda | null = null;
+for (const raw of lines) {
+    const line = raw.trim();
+    if (line.startsWith("## ")) {
+        const label = line.replace(/^##\s+/, "");
+        currentDay = { label, events: [] };
+        days.push(currentDay);
+        continue;
+    }
+    if (!currentDay || !line.startsWith("- ")) continue;
+    const m = line.match(timeRe);
+    if (!m) continue;
+    const sh = Number(m[1]);
+    const sm = Number(m[2]);
+    const eh = Number(m[3]);
+    const em = Number(m[4]);
+    const title = m[5].trim();
+    currentDay.events.push({
+        start: sh * 60 + sm,
+        end: eh * 60 + em,
+        title,
+        color: palette[currentDay.events.length % palette.length],
+    });
+}
+const filteredDays = days.filter((d) => d.events.length > 0);
+const dayLabels = filteredDays.map((d) => d.label);
+const selectedDay = filteredDays[0] ?? { label: "Agenda", events: [] };
+const slotCount = (endMinutes - startMinutes) / slotMinutes;
+type SlotCell =
+    | { kind: "empty" }
+    | { kind: "start"; title: string; span: number; color: string }
+    | { kind: "cont" };
+const slots: SlotCell[] = Array.from({ length: slotCount }, () => ({
+    kind: "empty",
+}));
+for (const e of selectedDay.events) {
+    if (e.end <= startMinutes || e.start >= endMinutes) continue;
+
+    const s = Math.max(e.start, startMinutes);
+    const en = Math.min(e.end, endMinutes);
+
+    const startIdx = Math.floor((s - startMinutes) / slotMinutes);
+    const span = Math.max(1, Math.ceil((en - s) / slotMinutes));
+
+    if (startIdx < 0 || startIdx >= slotCount) continue;
+    if (slots[startIdx].kind !== "empty") continue;
+
+    slots[startIdx] = { kind: "start", title: e.title, span, color: e.color };
+    for (let i = 1; i < span && startIdx + i < slotCount; i++) {
+        if (slots[startIdx + i].kind === "empty")
+            slots[startIdx + i] = { kind: "cont" };
+    }
+}
+---
+
+<section class="agenda" id="agenda">
+    <h2>Agenda</h2>
+
+    <div class="day-nav"></div>
+
+    <div class="grid">
+        <div class="head time">Time</div>
+        <div class="head slot">
+            <div class="day-nav">
+                <button id="prevDay" type="button" aria-label="Previous day"
+                    >←</button
+                >
+                <p id="dayLabel">{selectedDay.label}</p>
+                <button id="nextDay" type="button" aria-label="Next day"
+                    >→</button
+                >
+            </div>
+        </div>
+
+        {
+            times.slice(0, -1).map((t, i) => (
+                <>
+                    <div class="time-cell">{t}</div>
+
+                    {slots[i].kind === "empty" && <div class="slot-cell" />}
+
+                    {slots[i].kind === "start" && (
+                        <div
+                            class="slot-cell"
+                            style={`grid-row: span ${slots[i].span}; background:${slots[i].color}; font-weight:700; justify-content:flex-start; color:#0f172a;`}
+                        >
+                            {slots[i].title}
+                        </div>
+                    )}
+                </>
+            ))
+        }
+    </div>
+</section>
+
+<script
+    define:vars={{ filteredDays, startMinutes, endMinutes, slotMinutes, times }}
+>
+    let idx = 0;
+    const prev = document.getElementById("prevDay");
+    const next = document.getElementById("nextDay");
+    const label = document.getElementById("dayLabel");
+    const grid = document.querySelector(".grid");
+    const palette = ["#DBEAFE", "#DCFCE7", "#FCE7F3", "#FEF3C7", "#EDE9FE"];
+    function buildSlots(day) {
+        const slotCount = (endMinutes - startMinutes) / slotMinutes;
+        const slots = Array.from({ length: slotCount }, () => ({
+            kind: "empty",
+        }));
+        day.events.forEach((e, i) => {
+            if (e.end <= startMinutes || e.start >= endMinutes) return;
+            const s = Math.max(e.start, startMinutes);
+            const en = Math.min(e.end, endMinutes);
+            const startIdx = Math.floor((s - startMinutes) / slotMinutes);
+            const span = Math.max(1, Math.ceil((en - s) / slotMinutes));
+            if (startIdx < 0 || startIdx >= slotCount) return;
+            if (slots[startIdx].kind !== "empty") return;
+            slots[startIdx] = {
+                kind: "start",
+                title: e.title,
+                span,
+                color: palette[i % palette.length],
+            };
+            for (let j = 1; j < span && startIdx + j < slotCount; j++) {
+                if (slots[startIdx + j].kind === "empty") {
+                    slots[startIdx + j] = { kind: "cont" };
+                }
+            }
+        });
+
+        return slots;
+    }
+    function render() {
+        const day = filteredDays[idx];
+        label.textContent = day.label;
+        while (grid.children.length > 2) {
+            grid.removeChild(grid.lastElementChild);
+        }
+        const slots = buildSlots(day);
+        for (let i = 0; i < slots.length; i++) {
+            const timeCell = document.createElement("div");
+            timeCell.className = "time-cell";
+            timeCell.textContent = times[i];
+            timeCell.setAttribute(
+                "style",
+                "height:14px;padding:4px 10px;border:1px;font-size:0.78rem;color:#475569;font-variant-numeric:tabular-nums;display:flex;align-items:center;justify-content:flex-end;border:1px solid #000000;",
+            );
+            grid.appendChild(timeCell);
+
+            if (slots[i].kind === "empty") {
+                const slotCell = document.createElement("div");
+                slotCell.className = "slot-cell";
+                grid.appendChild(slotCell);
+            } else if (slots[i].kind === "start") {
+                const slotCell = document.createElement("div");
+                slotCell.className = "slot-cell";
+                slotCell.setAttribute(
+                    "style",
+                    `grid-row: span ${slots[i].span}; background:${slots[i].color}; font-weight:700; display: flex; align-items: center; justify-content:flex-start; color:#0f172a; font-size: 0.9rem; padding: 4px 10px; border: 1px solid #000000`,
+                );
+                slotCell.textContent = slots[i].title;
+                grid.appendChild(slotCell);
+            }
+        }
+    }
+    prev?.addEventListener("click", () => {
+        idx = (idx - 1 + filteredDays.length) % filteredDays.length;
+        render();
+    });
+    next?.addEventListener("click", () => {
+        idx = (idx + 1) % filteredDays.length;
+        render();
+    });
+</script>
+
+<style>
+    .agenda {
+        margin: 0 auto;
+        padding: 56px 20px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 90px 1fr;
+        border: 1px solid #000000;
+    }
+
+    .head {
+        padding: 10px 12px;
+        font-weight: 700;
+        background: #f1f5f9;
+        color: #0f172a;
+    }
+
+    .head.slot {
+        display: inline-flex;
+        height: 26px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .head.time,
+    .time-cell,
+    .head.slot,
+    .slot-cell {
+        border: 1px solid #000000;
+    }
+
+    .time-cell {
+        height: 14px;
+        padding: 4px 10px;
+        font-size: 0.9rem;
+        color: #475569;
+        font-variant-numeric: tabular-nums;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .slot-cell {
+        padding: 4px 10px;
+        font-size: 0.9rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .day-nav {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 6px 10px;
+    }
+
+    .day-nav button {
+        width: 30px;
+        height: 30px;
+        border-radius: 9999px;
+        border: 1px solid #000000;
+        background-color: #ffffff;
+        color: #0f172a;
+        appearance: none;
+        -webkit-appearance: none;
+        cursor: pointer;
+    }
+
+    .day-nav button:hover {
+        background-color: #ffffff;
+        border-color: #94a3b8;
+    }
+</style>
