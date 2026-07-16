@@ -75,11 +75,10 @@
 
 ---
 
-## Thursday, July 23 – Wednesday, July 29: Hackathon Period
-
+> **Thursday, July 23 – Wednesday, July 29: Hackathon Period**
 > Flexible schedule. Organizers may adjust daily based on project progress.
 
-### Thursday, July 23
+## Thursday, July 23
 
 - 9:00–10:00 — Morning Lecture — Steve Nerem (University of Colorado) — Introduction to Satellite Altimetry and Satellite Gravity for the Oceans
 - 10:00–10:30 — Project check-in (all teams)
@@ -89,7 +88,7 @@
 - 16:00–17:00 — Afternoon check-in (all teams)
 - 17:00 — Optional informal discussion
 
-### Friday, July 24
+## Friday, July 24
 
 - 9:00–10:00 — Morning Lecture — Georgy Manucharyan (UW) — Fundamentals of machine learning for oceanography
 - 10:00–10:30 — Project check-in (all teams)
@@ -99,11 +98,11 @@
 - 16:00–17:00 — Afternoon check-in (all teams)
 - 17:00 — Optional informal discussion
 
-### Saturday, July 25 – Sunday, July 26 (Weekend)
+## Saturday, July 25 – Sunday, July 26 (Weekend)
 
 - No formal sessions. Participants may work independently or explore Seattle.
 
-### Monday, July 27
+## Monday, July 27
 
 - 9:00–10:00 — Morning Lecture — Justin Stopa (University of Hawaii at Manoa) — Introduction to SAR and the applications
 - 10:00–10:30 — Project check-in (all teams)
@@ -113,7 +112,7 @@
 - 16:00–17:00 — Afternoon check-in (all teams)
 - 17:00 — Optional informal discussion
 
-### Tuesday, July 28
+## Tuesday, July 28
 
 - 9:00–10:00 — Morning Lecture — Tatsu Monkman (NYU) — Using diffusion model for multivariable satellite data fusion
 - 10:00–10:30 — Project check-in (all teams)
@@ -123,7 +122,7 @@
 - 16:00–17:00 — Afternoon check-in (all teams)
 - 17:00 — Optional informal discussion
 
-### Wednesday, July 29
+## Wednesday, July 29
 
 - 9:00–10:00 — Morning Lecture — Jinbo Wang (TAMU) — Let's go nonlinear with SWOT
 - 10:00–10:30 — Project check-in (all teams)
