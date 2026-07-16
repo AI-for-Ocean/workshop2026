@@ -51,7 +51,7 @@
 
 ## Wednesday, July 22
 
-- 9:00–9:40 — Invited Talk — Martin Kolster (University of Colorado Boulder) — Toward Emulator-Enabled Integration of Satellite Altimetry and Climate Models
+- 9:00–9:40 — Invited Talk — Martin Kolster (University of Colorado Boulder) — Spatiotemporal Machine Learning Representations of Satellite Altimeter Measurements
 - 9:40–10:00 — Lightning Talk — Horim Kim (MIT) — Connecting marine nitrous oxide emissions to Ocean vertical transport
 - 10:00–10:20 — Lightning Talk — Aidan Janney (UCAR / NCAR) — Regional Emulation of MOM6: Development and Future Directions
 - 10:20–10:40 — Lightning Talk — Yingjun Zhang (SIO, UCSD) — TBD
