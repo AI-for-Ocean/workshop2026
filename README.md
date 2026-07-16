@@ -24,6 +24,7 @@
 - 15:00–15:30 — Coffee Break
 - 15:30–16:20 — Self-Introduction Slides — All participants (round-robin, ~1.5 min each)
 - 16:20–16:50 — Project Ideas Init — Introduce shared project slide deck
+- 16:50–17:10 — Lightning Talk — Andrei Medvedev (University of Washington) — TBD
 
 ---
 
@@ -46,6 +47,7 @@
 - 15:50–16:10 — Lightning Talk — Cim Wortham & Daniel Neshyba-Rowe (NWRA) — TBD
 - 16:10–16:30 — Lightning Talk — Junwei Hua (TAMU) — From Sea Surface Height to Subsurface Flow: Spatiotemporal Observability in Two-Layer Geostrophic Turbulence
 - 16:30–16:50 — Project Formation — Team organization and project scoping
+- 16:50–17:10 — Lightning Talk — Eugenio Cutolo (Atalaia AI) — TBD
 
 ---
 
@@ -68,6 +70,7 @@
 - 15:00–15:30 — Coffee Break
 - 15:30–16:15 — Project Pitch Session — Each team pitches their project (5 min each)
 - 16:15–16:50 — Team Finalization — Confirm project teams and plans
+- 16:50–17:10 — Lightning Talk — Hector Torres (JPL, NASA) — TBD
 - 19:00–21:00 — Movie Night (default: Inception; email coordinator to propose alternatives)
 
 ---
