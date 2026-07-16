@@ -19,7 +19,7 @@
 - 11:50–12:10 — Lightning Talk — X. Prochaska (UC Santa Cruz) — Riding the exponential to resolve ocean processes
 - 12:10–13:40 — Lunch
 - 13:40–14:20 — Invited Talk — Zhiwen Fan (TAMU) — Ocean Foundation Model Architecture
-- 14:20–14:40 — Lightning Talk — Siobhán Johnson (BAS / Cambridge) — The Role of Sea Ice in the Rifts of Thwaites Glacier Tongue, Antarctica
+- 14:20–14:40 — Lightning Talk — Siobhán Johnson (BAS / Cambridge) — SWOT and its potential for detection and assessment of ice mélange
 - 14:40–15:00 — Lightning Talk — Brandon Castillo (SJSU) — Deep Learning Ice-Ocean Interactions for Efficient Glacier Melt Simulations and Projections
 - 15:00–15:30 — Coffee Break
 - 15:30–16:20 — Self-Introduction Slides — All participants (round-robin, ~1.5 min each)
@@ -39,31 +39,32 @@
 - 11:50–12:10 — Lightning Talk — Xiao Ge (TAMU, remote) — Reconstructing Decadal Oxygen Variability from GERG Glider Missions Along the Texas Coast
 - 12:10–13:40 — Lunch
 - 13:40–14:20 — Invited Talk — Ian Fenty (JPL, NASA) — NASA ECCO Development and Challenges for ML
-- 14:20–14:40 — Lightning Talk — TBD
+- 14:20–14:40 — Lightning Talk — Jeffery Early (NWRA) — Toward an optimal state-space representation of ocean data
 - 14:40–15:00 — Lightning Talk — Yannik Glaser (U Hawaii) — Pretraining a General-Purpose SWOT Object Detection Model
 - 15:00–15:30 — Coffee Break
-- 15:30–15:50 — Lightning Talk — Ou Wang (JPL, NASA) — TBD
+- 15:30–15:50 — Lightning Talk — Ou Wang (JPL, NASA) — AI for Arctic Sea Ice: Forecasting and Gap Filling
 - 15:50–16:10 — Lightning Talk — Cim Wortham (NWRA) — TBD
-- 16:10–16:50 — Project Formation — Team organization and project scoping
+- 16:10–16:30 — Lightning Talk — Junwei Hua (TAMU) — From Sea Surface Height to Subsurface Flow: Spatiotemporal Observability in Two-Layer Geostrophic Turbulence
+- 16:30–16:50 — Project Formation — Team organization and project scoping
 
 ---
 
 ## Wednesday, July 22
 
-- 9:00–9:20 — Lightning Talk — Martin Kolster (University of Colorado Boulder) — Toward Emulator-Enabled Integration of Satellite Altimetry and Climate Models
-- 9:20–9:40 — Lightning Talk — Horim Kim (MIT) — Connecting marine nitrous oxide emissions to Ocean vertical transport
-- 9:40–10:00 — Lightning Talk — Aidan Janney (UCAR / NCAR) — Regional Emulation of MOM6: Development and Future Directions
-- 10:00–10:20 — Lightning Talk — Yingjun Zhang (SIO, UCSD) — TBD
-- 10:20–10:50 — Coffee Break
-- 10:50–11:10 — Lightning Talk — Yue (Luna) Bai (SIO, UCSD) — Can we use machine learning to represent subgrid vertical mixing in the upper ocean?
-- 11:10–11:30 — Lightning Talk — Allison (Alli) Ho (U Hawaii at Manoa) — TBD
-- 11:30–11:50 — Lightning Talk — Minghai Huang (TAMU) — TBD
-- 11:50–12:10 — Lightning Talk — TBD
-- 12:10–13:40 — Lunch
+- 9:00–9:40 — Invited Talk — Martin Kolster (University of Colorado Boulder) — Toward Emulator-Enabled Integration of Satellite Altimetry and Climate Models
+- 9:40–10:00 — Lightning Talk — Horim Kim (MIT) — Connecting marine nitrous oxide emissions to Ocean vertical transport
+- 10:00–10:20 — Lightning Talk — Aidan Janney (UCAR / NCAR) — Regional Emulation of MOM6: Development and Future Directions
+- 10:20–10:40 — Lightning Talk — Yingjun Zhang (SIO, UCSD) — TBD
+- 10:40–11:10 — Coffee Break
+- 11:10–11:30 — Lightning Talk — Yue (Luna) Bai (SIO, UCSD) — Can we use machine learning to represent subgrid vertical mixing in the upper ocean?
+- 11:30–11:50 — Lightning Talk — Allison (Alli) Ho (U Hawaii at Manoa) — TBD
+- 11:50–12:10 — Lightning Talk — Minghai Huang (TAMU) — TBD
+- 12:10–12:30 — Lightning Talk — Inès Larroche (LOPS / Amphitrite) — Representing Wave Current Interactions thanks to Machine Learning
+- 12:30–13:40 — Lunch
 - 13:40–14:00 — Lightning Talk — Krishna Calindi (TAMU) — Generating synthetic cloud on a global 1/4th degree resolution
 - 14:00–14:20 — Lightning Talk — Spencer Jones (TAMU) — Inferring heat transport anomaly from sea surface variables in a high-resolution climate model run
-- 14:20–14:40 — Lightning Talk — Sakib Mahmud (remote) — The Virtual ADCP: Deep-Learning Reconstruction of Ocean Velocity Profiles from Autonomous Underwater Gliders
-- 14:40–15:00 — Lightning Talk — TBD
+- 14:20–14:40 — Lightning Talk — Sakib Mahmud (remote) — Latent Signature Sensing: Can We Reconstruct Ocean Currents from Glider Flight and Science Streams?
+- 14:40–15:00 — Lightning Talk — Maya Anjur-Dietrich (MIT) — Combining metagenomics and environmental data to map distributions of picocyanobacterial biofilms
 - 15:00–15:30 — Coffee Break
 - 15:30–16:15 — Project Pitch Session — Each team pitches their project (5 min each)
 - 16:15–16:50 — Team Finalization — Confirm project teams and plans
