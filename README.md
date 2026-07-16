@@ -98,9 +98,13 @@
 - 16:00–17:00 — Afternoon check-in (all teams)
 - 17:00 — Optional informal discussion
 
-## Saturday, July 25 – Sunday, July 26 (Weekend)
+## Saturday, July 25
 
-- No formal sessions. Participants may work independently or explore Seattle.
+- 9:00–17:00 — Details TBD
+
+## Sunday, July 26
+
+- 9:00–17:00 — Details TBD
 
 ## Monday, July 27
 
