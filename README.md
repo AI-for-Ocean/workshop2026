@@ -67,6 +67,7 @@
 - 14:00–14:20 — Lightning Talk — Spencer Jones (TAMU) — Inferring heat transport anomaly from sea surface variables in a high-resolution climate model run
 - 14:20–14:40 — Lightning Talk — Sakib Mahmud (remote) — Latent Signature Sensing: Can We Reconstruct Ocean Currents from Glider Flight and Science Streams?
 - 14:40–15:00 — Lightning Talk — Maya Anjur-Dietrich (MIT) — Combining metagenomics and environmental data to map distributions of picocyanobacterial biofilms
+- 15:00–15:20 — Lightning Talk — Lauren Harvey (SIO, UCSD) — Southern Ocean Sea Ice Velocities and Transport with SWOT
 - 15:00–15:30 — Coffee Break
 - 15:30–16:15 — Project Pitch Session — Each team pitches their project (5 min each)
 - 16:15–16:50 — Team Finalization — Confirm project teams and plans
