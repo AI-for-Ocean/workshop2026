@@ -22,9 +22,9 @@
 - 14:20–14:40 — Lightning Talk — Siobhán Johnson (BAS / Cambridge) — SWOT and its potential for detection and assessment of ice mélange
 - 14:40–15:00 — Lightning Talk — Brandon Castillo (SJSU) — Deep Learning Ice-Ocean Interactions for Efficient Glacier Melt Simulations and Projections
 - 15:00–15:30 — Coffee Break
-- 15:30–16:20 — Self-Introduction Slides — All participants (round-robin, ~1.5 min each)
-- 16:20–16:40 — Lightning Talk — Andrei Medvedev (University of Washington) — TBD
-- 16:40–17:10 — Project Ideas Init — Introduce shared project slide deck
+- 15:30–15:50 — Lightning Talk — Andrei Medvedev (University of Washington) — TBD
+- 15:50–16:30 — Self-Introduction Slides — All participants (round-robin, ~1.5 min each)
+- 16:30–17:00 — Project Ideas Init — Introduce shared project slide deck
 
 ---
 
@@ -43,10 +43,10 @@
 - 14:20–14:40 — Lightning Talk — Jeffery Early (NWRA) — Toward an optimal state-space representation of ocean data
 - 14:40–15:00 — Lightning Talk — Yannik Glaser (U Hawaii) — Pretraining a General-Purpose SWOT Object Detection Model
 - 15:00–15:30 — Coffee Break
-- 15:30–15:50 — Lightning Talk — Ou Wang (JPL, NASA) — AI for Arctic Sea Ice: Forecasting and Gap Filling
-- 15:50–16:10 — Lightning Talk — Cim Wortham & Daniel Neshyba-Rowe (NWRA) — TBD
-- 16:10–16:30 — Lightning Talk — Junwei Hua (TAMU) — From Sea Surface Height to Subsurface Flow: Spatiotemporal Observability in Two-Layer Geostrophic Turbulence
-- 16:30–16:50 — Lightning Talk — Eugenio Cutolo (Atalaia AI) — TBD
+- 15:30–15:50 — Lightning Talk — Eugenio Cutolo (Atalaia AI) — TBD
+- 15:50–16:10 — Lightning Talk — Ou Wang (JPL, NASA) — AI for Arctic Sea Ice: Forecasting and Gap Filling
+- 16:10–16:30 — Lightning Talk — Cim Wortham & Daniel Neshyba-Rowe (NWRA) — TBD
+- 16:30–16:50 — Lightning Talk — Junwei Hua (TAMU) — From Sea Surface Height to Subsurface Flow: Spatiotemporal Observability in Two-Layer Geostrophic Turbulence
 - 16:50–17:20 — Project Formation — Team organization and project scoping
 
 ---
@@ -69,9 +69,9 @@
 - 14:40–15:00 — Lightning Talk — Maya Anjur-Dietrich (MIT) — Combining metagenomics and environmental data to map distributions of picocyanobacterial biofilms
 - 15:00–15:20 — Lightning Talk — Lauren Harvey (SIO, UCSD) — Southern Ocean Sea Ice Velocities and Transport with SWOT
 - 15:00–15:30 — Coffee Break
-- 15:30–16:15 — Project Pitch Session — Each team pitches their project (5 min each)
-- 16:15–16:35 — Lightning Talk — Hector Torres (JPL, NASA) — TBD
-- 16:35–17:10 — Team Finalization — Confirm project teams and plans
+- 15:30–15:50 — Lightning Talk — Hector Torres (JPL, NASA) — TBD
+- 15:50–16:25 — Project Pitch Session — Each team pitches their project (5 min each)
+- 16:25–17:00 — Team Finalization — Confirm project teams and plans
 - 19:00–21:00 — Movie Night (default: Inception; email coordinator to propose alternatives)
 
 ---
