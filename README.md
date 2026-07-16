@@ -43,7 +43,7 @@
 - 14:40–15:00 — Lightning Talk — Yannik Glaser (U Hawaii) — Pretraining a General-Purpose SWOT Object Detection Model
 - 15:00–15:30 — Coffee Break
 - 15:30–15:50 — Lightning Talk — Ou Wang (JPL, NASA) — AI for Arctic Sea Ice: Forecasting and Gap Filling
-- 15:50–16:10 — Lightning Talk — Cim Wortham (NWRA) — TBD
+- 15:50–16:10 — Lightning Talk — Cim Wortham & Daniel Neshyba-Rowe (NWRA) — TBD
 - 16:10–16:30 — Lightning Talk — Junwei Hua (TAMU) — From Sea Surface Height to Subsurface Flow: Spatiotemporal Observability in Two-Layer Geostrophic Turbulence
 - 16:30–16:50 — Project Formation — Team organization and project scoping
 
@@ -89,8 +89,8 @@
 - Thu Jul 23 — Steve Nerem (University of Colorado) — Introduction to Satellite Altimetry and Satellite Gravity for the Oceans
 - Fri Jul 24 — Georgy Manucharyan (UW) — Fundamentals of machine learning for oceanography
 - Mon Jul 27 — Justin Stopa (University of Hawaii at Manoa) — Introduction to SAR and the applications
-- Tue Jul 28 — Jinbo Wang (TAMU) — Let's go nonlinear with SWOT
-- Wed Jul 29 — TBD
+- Tue Jul 28 — Tatsu Monkman (NYU) — Using diffusion model for multivariable satellite data fusion
+- Wed Jul 29 — Jinbo Wang (TAMU) — Let's go nonlinear with SWOT
 
 **Weekend (July 25–26):** No formal sessions. Participants may work independently or explore Seattle.
 
