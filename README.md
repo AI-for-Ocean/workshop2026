@@ -57,13 +57,12 @@
 - 9:00–9:40 — Invited Talk — Martin Kolster (University of Colorado Boulder) — Spatiotemporal Machine Learning Representations of Satellite Altimeter Measurements
 - 9:40–10:00 — Lightning Talk — Horim Kim (MIT) — Connecting marine nitrous oxide emissions to Ocean vertical transport
 - 10:00–10:20 — Lightning Talk — Aidan Janney (UCAR / NCAR) — Regional Emulation of MOM6: Development and Future Directions
-- 10:20–10:40 — Lightning Talk — Yingjun Zhang (SIO, UCSD) — TBD
-- 10:40–11:10 — Coffee Break
-- 11:10–11:30 — Lightning Talk — Yue (Luna) Bai (SIO, UCSD) — Can we use machine learning to represent subgrid vertical mixing in the upper ocean?
-- 11:30–11:50 — Lightning Talk — Allison (Alli) Ho (U Hawaii at Manoa) — TBD
-- 11:50–12:10 — Lightning Talk — Minghai Huang (TAMU) — Understand SWOT noise and proposal to reduce it using machine learning
-- 12:10–12:30 — Lightning Talk — Inès Larroche (LOPS / Amphitrite) — Representing Wave Current Interactions thanks to Machine Learning
-- 12:30–13:40 — Lunch
+- 10:20–10:50 — Coffee Break
+- 10:50–11:10 — Lightning Talk — Yue (Luna) Bai (SIO, UCSD) — Can we use machine learning to represent subgrid vertical mixing in the upper ocean?
+- 11:10–11:30 — Lightning Talk — Allison (Alli) Ho (U Hawaii at Manoa) — TBD
+- 11:30–11:50 — Lightning Talk — Minghai Huang (TAMU) — Understand SWOT noise and proposal to reduce it using machine learning
+- 11:50–12:10 — Lightning Talk — Inès Larroche (LOPS / Amphitrite) — Representing Wave Current Interactions thanks to Machine Learning
+- 12:10–13:40 — Lunch
 - 13:40–14:00 — Lightning Talk — Spencer Jones (TAMU) — Inferring heat transport anomaly from sea surface variables in a high-resolution climate model run
 - 14:00–14:20 — Lightning Talk — Sakib Mahmud (remote) — Latent Signature Sensing: Can We Reconstruct Ocean Currents from Glider Flight and Science Streams?
 - 14:20–14:40 — Lightning Talk — Maya Anjur-Dietrich (MIT) — Combining metagenomics and environmental data to map distributions of picocyanobacterial biofilms
