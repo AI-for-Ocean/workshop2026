@@ -1,5 +1,8 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 
-// https://astro.build/config
-export default defineConfig({});
+export default defineConfig({
+  site: 'https://ai-for-ocean.github.io',
+  base: '/workshop2026/',
+  output: 'static'
+});
