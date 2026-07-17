@@ -17,7 +17,7 @@
 - 10:20–10:50 — Coffee Break
 - 10:50–11:10 — Lightning Talk — Arjit Seth (UT Austin) — Adjoint-based Stochastic Parameterization for Closure Models in Physical Oceanography
 - 11:10–11:30 — Lightning Talk — X. Prochaska (UC Santa Cruz) — Riding the exponential to resolve ocean processes
-- 11:30–11:50 — Lightning Talk — Andrei Medvedev (University of Washington) — TBD
+- 11:30–11:50 — Lightning Talk — Andrei Medvedev (University of Washington) — Reconstructing Global Ocean from the Historical Observing Record with a Score-Based Prior
 - 11:50–12:10 — Buffer / Open Discussion
 - 12:10–13:40 — Lunch
 - 13:40–14:20 — Invited Talk — Zhiwen Fan (TAMU) — Ocean Foundation Model Architecture
@@ -69,8 +69,8 @@
 - 14:40–15:00 — Lightning Talk — Lauren Harvey (SIO, UCSD) — Southern Ocean Sea Ice Velocities and Transport with SWOT
 - 15:00–15:30 — Coffee Break
 - 15:30–15:50 — Lightning Talk — Hector Torres (JPL, NASA) — TBD
-- 15:50–16:25 — Project Pitch Session — Each team pitches their project (5 min each)
-- 16:25–17:00 — Team Finalization — Confirm project teams and plans
+- 15:50–16:30 — Project Pitch Session — Each team pitches their project (5 min each)
+- 16:30–17:00 — Team Finalization — Confirm project teams and plans
 - 19:00–21:00 — Movie Night (default: Inception; email coordinator to propose alternatives)
 
 ---
