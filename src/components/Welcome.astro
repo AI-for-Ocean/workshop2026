@@ -38,64 +38,70 @@ import oceanBg from "../assets/background.png";
                 <span>Seattle, Washington</span>
             </button>
         </div>
-    
-        <p class="desc">A two-week workshop on current research and development in AI for oceans.</p>
+
+        <p class="desc">
+            A two-week workshop on current research and development in AI for
+            oceans.
+        </p>
     </div>
 </section>
 
 <script>
-    const locationBtn = document.querySelector('.location-btn');
+    const locationBtn = document.querySelector(".location-btn");
     const lat = 47.651334472418846;
     const lng = -122.31268418902182;
-    
-    locationBtn?.addEventListener('click', () => {
+
+    locationBtn?.addEventListener("click", () => {
         const mapsUrl = `https://www.google.com/maps/search/${lat},${lng}`;
-        window.open(mapsUrl, '_blank');
+        window.open(mapsUrl, "_blank");
     });
 </script>
 
 <style>
     .welcome {
-        min-height: 65vh;
+        padding: 0 2rem;
+        padding-top: var(--header-h);
+        min-height: 30vh;
         background-size: cover;
-        background-position: cover;
+        background-position: center;
+        box-sizing: border-box;
         display: flex;
         place-items: center;
         color: #fff;
         text-align: center;
-        padding: 0 40px;
-        padding-top: var(--header-h);
+        width: 100%;
     }
 
-    .desc {
-        max-width: 500px;
-        font-size: 1.8rem;
-    }
-
-    h1 {
-        margin: 0 0 20px;
-        font-size: 6rem;
+    .welcome h1 {
+        max-width: min(100%, 500px);
+        font-size: 3rem;
         font-weight: 900;
     }
 
+    .desc {
+        max-width: min(100%, 500px);
+        font-size: 1.8rem;
+    }
+
     .meta-row {
-        display: inline-flex;
+        display: flex;
+        flex-direction: rpw;
         align-items: center;
-        gap: 10px;
+        justify-content: space-around;
+        max-width: min(100%, 500px);
     }
 
     .meta {
-        margin: 8px 0;
         display: inline-flex;
         align-items: center;
-        gap: 10px;
         font-size: 1.5rem;
         font-weight: 700;
     }
 
     .meta svg {
-        width: 30px;
-        height: 30px;
+        width: 2rem;
+        height: 2rem;
+        padding-right: 1rem;
         stroke: currentColor;
         fill: none;
         stroke-width: 2;
@@ -113,6 +119,5 @@ import oceanBg from "../assets/background.png";
         padding: 0;
         display: inline-flex;
         align-items: center;
-        gap: 10px;
     }
 </style>

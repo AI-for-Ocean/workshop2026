@@ -5,7 +5,7 @@ import tamuLogo from "../assets/sponsors/tamu.png";
 import uwLogo from "../assets/sponsors/uw.png";
 ---
 
-<section class="sponsors-section">
+<section class="sponsors-section" id="sponsors">
     <h2>Our Sponsors</h2>
     <div class="sponsor-grid">
         <div class="sponsor-card">
@@ -30,31 +30,31 @@ import uwLogo from "../assets/sponsors/uw.png";
 <style>
     .sponsors-section {
         background: #eaf6ff;
-        padding: 25px;
+        padding: 1rem 2rem;
         text-align: center;
     }
 
     .sponsor-grid {
         display: grid;
-        grid-template-columns: repeat(4, minmax(180px, 240px));
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 15rem));
         justify-content: center;
-        gap: 80px;
+        gap: 5rem;
     }
 
     .sponsor-card {
         background: #fff;
         border: 1px solid #dbeafe;
         border-radius: 12px;
-        padding: 16px;
+        padding: 1rem;
     }
 
     .sponsor-card img {
         width: 100%;
-        max-width: 100px;
-        height: 100px;
+        max-width: 10rem;
+        height: 10rem;
         object-fit: contain;
         display: block;
-        margin: 0 auto 10px;
+        margin: 0 auto;
     }
 
     .sponsor-card p {

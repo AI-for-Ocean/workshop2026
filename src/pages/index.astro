@@ -1,26 +1,58 @@
 ---
-import Layout from "../layouts/Layout.astro";
 import TopBar from "../components/TopBar.astro";
 import Welcome from "../components/Welcome.astro";
-import About from "../components/About.astro"
-import Agenda from "../components/Agenda.astro"
+import About from "../components/About.astro";
+import Agenda from "../components/Agenda.astro";
 import Sponsors from "../components/Sponsors.astro";
-import Footer from "../components/Footer.astro"
+import Footer from "../components/Footer.astro";
 ---
 
-<Layout>
-	<TopBar />
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width"
+			viewport-fit='cover"/'
+		/>
+		<link rel="icon" type="image/png" href="/workshop2026/favicon.png" />
+		<link rel="icon" href="/workshop2026/favicon.ico" />
+		<meta name="generator" content={Astro.generator} />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<title>AI4Ocean 2026</title>
+	</head>
+	<body>
+		<TopBar />
 
-	<Welcome />
-	<section id="about" class="About">
+		<Welcome />
+
 		<About />
-	</section>
-	<section id="agenda" class="Agenda">
-		<Agenda />
-	</section>
-	<section id="sponsors" class="section">
-		<Sponsors />
-	</section>
 
-	<Footer />
-</Layout>
+		<Agenda />
+
+		<Sponsors />
+
+		<Footer />
+	</body>
+</html>
+
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+	}
+
+	:root {
+		--header-h: 10vh;
+	}
+
+	html,
+	body {
+		width: 100%;
+		font-family: "Roboto", Arial, sans-serif;
+	}
+</style>

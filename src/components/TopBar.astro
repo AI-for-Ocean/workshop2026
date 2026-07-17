@@ -1,14 +1,12 @@
 <header class="topbar">
-    <div class="inner">
-        <a href="/"><h2>AI4Ocean 2026</h2></a>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#agenda">Agenda</a>
-            <a href="#team">Team</a>
-            <a href="#projects">Projects</a>
-            <a href="#sponsors">Sponsors</a>
-        </nav>
-    </div>
+    <a href="/"><h2>AI4Ocean 2026</h2></a>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#agenda">Agenda</a>
+        <a href="#team">Team</a>
+        <a href="#projects">Projects</a>
+        <a href="#sponsors">Sponsors</a>
+    </nav>
 </header>
 
 <style>
@@ -18,20 +16,23 @@
         left: 0;
         right: 0;
         height: var(--header-h);
-        background: #000;
-        border-bottom: 1px solid #222;
+        background-color: #000;
+        color: #fff;
         z-index: 1000;
-    }
-
-    .inner {
-        height: 100%;
-        width: 100%;
-        margin: 0 0;
-        padding: 0 15px;
-        box-sizing: border-box;
         display: flex;
+        flex-direction: row;
         align-items: center;
         justify-content: space-between;
+        padding: 0 0.5rem;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav a {
+        margin-left: 0.2rem;
     }
 
     .topbar a,
@@ -41,10 +42,5 @@
     .topbar a:focus {
         color: #fff;
         text-decoration: none;
-    }
-
-    nav a {
-        font-size: 1.1rem;
-        padding-left: 15px;
     }
 </style>
