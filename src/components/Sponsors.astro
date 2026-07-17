@@ -1,6 +1,8 @@
 ---
 import nasaLogo from "../assets/sponsors/nasa.webp";
 import nsfLogo from "../assets/sponsors/nsf.webp";
+import tamuLogo from "../assets/sponsors/tamu.png";
+import uwLogo from "../assets/sponsors/uw.png";
 ---
 
 <section class="sponsors-section">
@@ -14,6 +16,14 @@ import nsfLogo from "../assets/sponsors/nsf.webp";
             <img src={nsfLogo.src} alt="NSF logo" />
             <p>NSF</p>
         </div>
+        <div class="sponsor-card">
+            <img src={tamuLogo.src} alt="TAMU logo" />
+            <p>Texas A&M University</p>
+        </div>
+        <div class="sponsor-card">
+            <img src={uwLogo.src} alt="UW logo" />
+            <p>University of Washintgon</p>
+        </div>
     </div>
 </section>
 
@@ -26,7 +36,7 @@ import nsfLogo from "../assets/sponsors/nsf.webp";
 
     .sponsor-grid {
         display: grid;
-        grid-template-columns: repeat(2, minmax(180px, 240px));
+        grid-template-columns: repeat(4, minmax(180px, 240px));
         justify-content: center;
         gap: 80px;
     }

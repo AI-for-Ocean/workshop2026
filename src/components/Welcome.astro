@@ -1,5 +1,5 @@
 ---
-import oceanBg from "../assets/background.jpg";
+import oceanBg from "../assets/background.png";
 ---
 
 <section
@@ -25,7 +25,7 @@ import oceanBg from "../assets/background.jpg";
                 <span>20 - 31 July</span>
             </p>
 
-            <p class="meta">
+            <button class="meta location-btn">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -36,18 +36,29 @@ import oceanBg from "../assets/background.jpg";
                     <circle cx="12" cy="10" r="3"></circle>
                 </svg>
                 <span>Seattle, Washington</span>
-            </p>
+            </button>
         </div>
     
         <p class="desc">A two-week workshop on current research and development in AI for oceans.</p>
     </div>
 </section>
 
+<script>
+    const locationBtn = document.querySelector('.location-btn');
+    const lat = 47.651334472418846;
+    const lng = -122.31268418902182;
+    
+    locationBtn?.addEventListener('click', () => {
+        const mapsUrl = `https://www.google.com/maps/search/${lat},${lng}`;
+        window.open(mapsUrl, '_blank');
+    });
+</script>
+
 <style>
     .welcome {
         min-height: 65vh;
-        background-size: 100% 100%;
-        background-position: center;
+        background-size: cover;
+        background-position: cover;
         display: flex;
         place-items: center;
         color: #fff;
@@ -89,5 +100,19 @@ import oceanBg from "../assets/background.jpg";
         fill: none;
         stroke-width: 2;
         flex-shrink: 0;
+    }
+
+    .location-btn {
+        background: none;
+        border: none;
+        color: inherit;
+        font: inherit;
+        font-size: 1.5rem;
+        font-weight: 700;
+        cursor: pointer;
+        padding: 0;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
     }
 </style>
