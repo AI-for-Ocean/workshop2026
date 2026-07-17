@@ -110,7 +110,7 @@
 
 - 9:00–10:00 — Morning Lecture — Justin Stopa (University of Hawaii at Manoa) — Introduction to SAR and the applications
 - 10:00–10:30 — Project check-in (all teams)
-- 10:30–12:00 — Project work (or optional ad-hoc talks)
+- 10:30–12:00 — A conversation with Nvidia team (Mike Pritchard, Dale Duran)
 - 12:00–13:30 — Lunch (on your own)
 - 13:30–16:00 — Project work / hackathon
 - 16:00–17:00 — Afternoon check-in (all teams)
