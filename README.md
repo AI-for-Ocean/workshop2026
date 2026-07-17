@@ -44,7 +44,7 @@
 - 14:20–14:40 — Lightning Talk — Jeffery Early (NWRA) — Toward an optimal state-space representation of ocean data
 - 14:40–15:00 — Lightning Talk — Yannik Glaser (U Hawaii) — Pretraining a General-Purpose SWOT Object Detection Model
 - 15:00–15:30 — Coffee Break
-- 15:30–15:50 — Lightning Talk — Eugenio Cutolo (Atalaia AI) — TBD
+- 15:30–15:50 — Lightning Talk — Allison (Alli) Ho (U Hawaii at Manoa) - SSHa, SWH, and σ⁰: SWOT’s Three Perspectives on the Ocean Surface  
 - 15:50–16:10 — Lightning Talk — Ou Wang (JPL, NASA) — AI for Arctic Sea Ice: Forecasting and Gap Filling
 - 16:10–16:30 — Lightning Talk — Cim Wortham & Daniel Neshyba-Rowe (NWRA) — TBD
 - 16:30–16:50 — Lightning Talk — Junwei Hua (TAMU) — From Sea Surface Height to Subsurface Flow: Spatiotemporal Observability in Two-Layer Geostrophic Turbulence
@@ -59,7 +59,7 @@
 - 10:00–10:20 — Lightning Talk — Aidan Janney (UCAR / NCAR) — Regional Emulation of MOM6: Development and Future Directions
 - 10:20–10:50 — Coffee Break
 - 10:50–11:10 — Lightning Talk — Yue (Luna) Bai (SIO, UCSD) — Can we use machine learning to represent subgrid vertical mixing in the upper ocean?
-- 11:10–11:30 — Lightning Talk — Allison (Alli) Ho (U Hawaii at Manoa) — TBD
+- 11:10–11:30 — Lightning Talk — Eugenio Cutolo (Atalaia AI) 
 - 11:30–11:50 — Lightning Talk — Minghai Huang (TAMU) — Understand SWOT noise and proposal to reduce it using machine learning
 - 11:50–12:10 — Lightning Talk — Inès Larroche (LOPS / Amphitrite) — Representing Wave Current Interactions thanks to Machine Learning
 - 12:10–13:40 — Lunch
