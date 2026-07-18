@@ -44,7 +44,7 @@
 - 14:20–14:40 — Lightning Talk — Jeffery Early (NWRA) — Toward an optimal state-space representation of ocean data
 - 14:40–15:00 — Lightning Talk — Yannik Glaser (U Hawaii) — Pretraining a General-Purpose SWOT Object Detection Model
 - 15:00–15:30 — Coffee Break
-- 15:30–15:50 — Lightning Talk — Allison (Alli) Ho (U Hawaii at Manoa) - SSHa, SWH, and σ⁰: SWOT’s Three Perspectives on the Ocean Surface  
+- 15:30–15:50 — Lightning Talk — Allison (Alli) Ho (U Hawaii at Manoa) — SSHa, SWH, and σ⁰: SWOT’s Three Perspectives on the Ocean Surface  
 - 15:50–16:10 — Lightning Talk — Ou Wang (JPL, NASA) — AI for Arctic Sea Ice: Forecasting and Gap Filling
 - 16:10–16:30 — Lightning Talk — Cim Wortham & Daniel Neshyba-Rowe (NWRA) — A Unified Framework for Next-Generation Sea Surface Height Mapping
 - 16:30–16:50 — Lightning Talk — Junwei Hua (TAMU) — From Sea Surface Height to Subsurface Flow: Spatiotemporal Observability in Two-Layer Geostrophic Turbulence
