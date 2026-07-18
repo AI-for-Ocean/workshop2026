@@ -1,5 +1,76 @@
 ---
+import { Image } from "astro:assets";
 import teamData from "../data/bios.json";
+import placeholderImg from "../assets/headshots/placeholder.png";
+import AnRoy from "../assets/headshots/An-Roy.jpeg";
+import ApteDhruv from "../assets/headshots/Apte-Dhruv.jpg";
+import BaiYue from "../assets/headshots/Bai-Yue.png";
+import BissonKelsey from "../assets/headshots/Bisson-Kelsey.jpg";
+import CaiLevi from "../assets/headshots/Cai-Levi.jpg";
+import CalindiKrishna from "../assets/headshots/Calindi-Krishna.jpg";
+import CastilloBrandon from "../assets/headshots/Castillo-Brandon.jpg";
+import CruzEthan from "../assets/headshots/Cruz-Ethan.jpeg";
+import FanZhiwen from "../assets/headshots/Fan-Zhiwen.jpg";
+import FentyIan from "../assets/headshots/Fenty-Ian.jpg";
+import GeXiao from "../assets/headshots/Ge-Xiao.jpg";
+import GlaserYannik from "../assets/headshots/Glaser-Yannik.jpg";
+import HarveyLauren from "../assets/headshots/Harvey-Lauren.jpg";
+import HoAllison from "../assets/headshots/Ho-Allison.jpg";
+import HuaJunwei from "../assets/headshots/Hua-Junwei.jpg";
+import HuangMinghai from "../assets/headshots/Huang-Minghai.png";
+import JanneyAidan from "../assets/headshots/Janney-Aidan.png";
+import JonesSpencer from "../assets/headshots/Jones-Spencer.jpg";
+import KimHorim from "../assets/headshots/Kim-Horim.jpg";
+import KolsterMartin from "../assets/headshots/Kolster-Martin.jpg";
+import LiSuyue from "../assets/headshots/Li-Suyue.png";
+import ManucharyanGeorgy from "../assets/headshots/Manucharyan-Georgy.png";
+import MartinScott from "../assets/headshots/Martin-Scott.jpg";
+import MedvedevAndrei from "../assets/headshots/Medvedev-Andrei.jpg";
+import MonkmanTatsu from "../assets/headshots/Monkman-Tatsu.jpg";
+import NeremSteve from "../assets/headshots/Nerem-Steve.jpeg";
+import ProchaskaJason from "../assets/headshots/Prochaska-Jason.jpg";
+import ShahriarTanvir from "../assets/headshots/Shahriar-Tanvir.jpg";
+import ShifferNadya from "../assets/headshots/Shiffer-Nadya.jpg";
+import SoaresSaulo from "../assets/headshots/Soares-Saulo.jpeg";
+import StopaJustin from "../assets/headshots/Stopa-Justin.jpg";
+import VenukanthanNayana from "../assets/headshots/Venukanthan-Nayana.jpg";
+import WangJinbo from "../assets/headshots/Wang-Jinbo.png";
+
+const headshots = {
+  "An-Roy.jpeg": AnRoy,
+  "Apte-Dhruv.jpg": ApteDhruv,
+  "Bai-Yue.png": BaiYue,
+  "Bisson-Kelsey.jpg": BissonKelsey,
+  "Cai-Levi.jpg": CaiLevi,
+  "Calindi-Krishna.jpg": CalindiKrishna,
+  "Castillo-Brandon.jpg": CastilloBrandon,
+  "Cruz-Ethan.jpeg": CruzEthan,
+  "Fan-Zhiwen.jpg": FanZhiwen,
+  "Fenty-Ian.jpg": FentyIan,
+  "Ge-Xiao.jpg": GeXiao,
+  "Glaser-Yannik.jpg": GlaserYannik,
+  "Harvey-Lauren.jpg": HarveyLauren,
+  "Ho-Allison.jpg": HoAllison,
+  "Hua-Junwei.jpg": HuaJunwei,
+  "Huang-Minghai.png": HuangMinghai,
+  "Janney-Aidan.png": JanneyAidan,
+  "Jones-Spencer.jpg": JonesSpencer,
+  "Kim-Horim.jpg": KimHorim,
+  "Kolster-Martin.jpg": KolsterMartin,
+  "Li-Suyue.png": LiSuyue,
+  "Manucharyan-Georgy.png": ManucharyanGeorgy,
+  "Martin-Scott.jpg": MartinScott,
+  "Medvedev-Andrei.jpg": MedvedevAndrei,
+  "Monkman-Tatsu.jpg": MonkmanTatsu,
+  "Nerem-Steve.jpeg": NeremSteve,
+  "Prochaska-Jason.jpg": ProchaskaJason,
+  "Shahriar-Tanvir.jpg": ShahriarTanvir,
+  "Shiffer-Nadya.jpg": ShifferNadya,
+  "Soares-Saulo.jpeg": SoaresSaulo,
+  "Stopa-Justin.jpg": StopaJustin,
+  "Venukanthan-Nayana.jpg": VenukanthanNayana,
+  "Wang-Jinbo.png": WangJinbo,
+};
 ---
 
 <section id="team" class="team">
@@ -15,12 +86,8 @@ import teamData from "../data/bios.json";
               .filter((m) => m.role === role)
               .map((member) => (
                 <div class="team-card" onclick={`document.getElementById('popup-${member.email}').showModal()`}>
-                  <img
-                    src={
-                      member.photo_filename
-                        ? `/src/assets/headshots/${member.photo_filename}`
-                        : "/src/assets/headshots/placeholder.png"
-                    }
+                  <Image
+                    src={headshots[member.photo_filename as keyof typeof headshots] || placeholderImg}
                     alt={member.name}
                     class="team-photo"
                   />
