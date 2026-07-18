@@ -1,8 +1,7 @@
-# AI4Ocean Workshop 2026 — Draft Agenda
+# AI4Ocean Workshop 2026 
 
 **Dates:** July 20–31, 2026
-**Venue:** School of Oceanography, Ocean Science Building, University of Washington
-**Status:** DRAFT — semifinal
+**Venue:** School of Oceanography, [Ocean Science Building](https://maps.app.goo.gl/NnW2p64xSZhc83V5A), University of Washington
 **Times:** Pacific Time. Simple breakfast and lunch box provided Jul 20–22.
 
 > Invited talks: 20 min + 20 min discussion (40 min total)
@@ -12,6 +11,7 @@
 
 ## Monday, July 20
 
+- 8:30-9:00 - Light breakfast (muffins, bagels, yogurt, coffee)
 - 9:00–9:40 — Welcome & Opening Remarks — Georgy Manucharyan, Jinbo Wang, Nadya Vinogradova Shiffer
 - 9:40–10:20 — Invited Talk — Luke Van Roekel (LANL) — Ocean AI/ML development at DoE
 - 10:20–10:50 — Coffee Break
@@ -31,6 +31,7 @@
 
 ## Tuesday, July 21
 
+- 8:30-9:00 - Light breakfast (muffins, bagels, yogurt, coffee)
 - 9:00–9:40 — Invited Talk — Kelsey Bisson (NASA) — Biodiversity from Space: Challenges and Opportunities
 - 9:40–10:00 — Lightning Talk — Tanvir Shahriar (UT Austin) — Implementing the 1° DINO Configuration in MITgcm and Adjoint-Based Sensitivity Analysis of AMOC Transport Using Tapenade
 - 10:00–10:20 — Lightning Talk — Dhruv Apte (UT Austin) — Breaking the Ice: Probabilistic Deep Learning for Sea-Ice Velocity with Dual Uncertainty
@@ -54,6 +55,7 @@
 
 ## Wednesday, July 22
 
+- 8:30-9:00 - Light breakfast (muffins, bagels, yogurt, coffee)
 - 9:00–9:40 — Invited Talk — Martin Kolster (University of Colorado Boulder) — Spatiotemporal Machine Learning Representations of Satellite Altimeter Measurements
 - 9:40–10:00 — Lightning Talk — Horim Kim (MIT) — Connecting marine nitrous oxide emissions to Ocean vertical transport
 - 10:00–10:20 — Lightning Talk — Aidan Janney (UCAR / NCAR) — Regional Emulation of MOM6: Development and Future Directions
