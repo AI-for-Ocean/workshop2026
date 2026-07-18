@@ -127,18 +127,19 @@ const headshots = {
 
 <style>
   .team {
-    padding: 1rem 5rem;
+    padding: 0 0.4rem;
+    margin-bottom: 0.2rem;
   }
 
-  .team-section {
-    margin-bottom: 2rem;
+  .role-section {
+    text-align: center;
   }
 
   .team-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 15rem));
     gap: 2rem;
-    justify-content: left;
+    justify-content: center;
   }
 
   .team-card {
@@ -217,4 +218,11 @@ const headshots = {
         color: #000;
         text-decoration: none;
     }
+
+
+  @media (min-width: 768px) {
+  .team {
+      padding: 0 5rem;
+  }
+}
 </style>

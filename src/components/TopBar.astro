@@ -1,5 +1,5 @@
 <header class="topbar">
-    <a href="/"><h2>AI4Ocean 2026</h2></a>
+    <a href="/"><h2>AI4Ocean</h2></a>
     <nav class="navbar">
         <button class="hamburger" id="hamburger">
             <span></span>
@@ -45,11 +45,12 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        padding: 0 5rem;
+        padding: 0 0.4rem;
     }
 
     .topbar h2 {
         font-size: 2rem;
+        margin: 0;
     }
 
     .hamburger {
@@ -73,6 +74,7 @@
 
     .nav-links {
         position: absolute;
+        right: 0; 
         top: var(--header-h);
         display: flex;
         flex-direction: column;
@@ -112,5 +114,11 @@
     .topbar a:focus {
         color: #fff;
         text-decoration: none;
+    }
+
+    @media (min-width: 768px) {
+        .topbar {
+            padding: 0 5rem;
+        }
     }
 </style>
