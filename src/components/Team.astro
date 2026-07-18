@@ -1,0 +1,151 @@
+---
+import teamData from "../data/bios.json";
+---
+
+<section id="team" class="team">
+  <h2>Meet the team</h2>
+
+  {
+    ["organizer", "lecturer", "invited speaker", "participant"].map(
+      (role) => (
+        <div class="role-section">
+          <h3>{role.charAt(0).toUpperCase() + role.slice(1) + "s"}</h3>
+          <div class="team-grid" >
+            {teamData
+              .filter((m) => m.role === role)
+              .map((member) => (
+                <div class="team-card" onclick={`document.getElementById('popup-${member.email}').showModal()`}>
+                  <img
+                    src={
+                      member.photo_filename
+                        ? `/src/assets/headshots/${member.photo_filename}`
+                        : "/src/assets/headshots/placeholder.png"
+                    }
+                    alt={member.name}
+                    class="team-photo"
+                  />
+                  <div class="details">
+                  <h4>{member.name}</h4>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+  <polyline points="15 3 21 3 21 9" />
+  <line x1="10" y1="14" x2="21" y2="3" />
+</svg>
+                  </div>
+                </div>
+
+                <dialog id={`popup-${member.email}`} class="bio-popup">
+          <div class="popup-content">
+            <button class="close-btn" onclick="this.closest('dialog').close()">✕</button>
+            <img 
+              src={member.photo_filename 
+                ? `/src/assets/headshots/${member.photo_filename}` 
+                : '/src/assets/headshots/placeholder.png'} 
+              alt={member.name} 
+              class="popup-photo" 
+            />
+            <h3>{member.name}</h3>
+            <p class="popup-bio">{member.bio}</p>
+          </div>
+        </dialog>
+              ))}
+          </div>
+        </div>
+      ),
+    )
+  }
+</section>
+
+<style>
+  .team {
+    padding: 1rem 5rem;
+  }
+
+  .team-section {
+    margin-bottom: 2rem;
+  }
+
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 15rem));
+    gap: 2rem;
+    justify-content: left;
+  }
+
+  .team-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    color: #000;
+    background-color: #d9e4f0;;
+    cursor: pointer;
+  }
+
+  .team-photo {
+    width: 15rem;
+    height: 18rem;
+    object-fit: cover;
+  }
+
+
+  .details {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  .bio-popup {
+  border: none;
+  border-radius: 8px;
+  padding: 0;
+  max-width: 500px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.bio-popup::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+  padding: 2rem;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #666;
+}
+
+.close-btn:hover {
+  color: #000;
+}
+
+.popup-photo {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.popup-bio {
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+    a,
+    a:visited,
+    a:hover,
+    a:active,
+    a:focus {
+        color: #000;
+        text-decoration: none;
+    }
+</style>

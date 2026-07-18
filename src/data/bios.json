@@ -1,0 +1,404 @@
+[
+  {
+    "name": "Saulo Muller Soares",
+    "email": "saulo@ucsd.edu",
+    "bio": "Saulo Soares is an assistant project scientist at the Scripps Institution of Oceanography of the University of California San Diego studying ocean eddies and internal waves with satellite altimetry and shipboard measurements.",
+    "photo_filename": "Soares-Saulo.jpeg",
+    "photo_source": "attachment",
+    "role": "participant"
+  },
+  {
+    "name": "Yue (Luna) Bai",
+    "email": "yuebai@ucsd.edu",
+    "bio": "Yue Bai is a postdoctoral scholar at the Scripps Institution of Oceanography, UC San Diego, researching air-sea interactions in the open Southern Ocean.",
+    "photo_filename": "Bai-Yue.png",
+    "photo_source": "attachment",
+    "role": "participant"
+  },
+  {
+    "name": "Brandon Castillo",
+    "email": "brandon.castillo@sjsu.edu",
+    "bio": "Brandon Castillo is a Master's student at Moss Landing Marine Laboratories (San Jose State University) exploring how to implement deep learning with numerical modeling on glacier-sea interactions for accurately predicting changes in sea rise.",
+    "photo_filename": "Castillo-Brandon.jpg",
+    "photo_source": "attachment",
+    "role": "participant"
+  },
+  {
+    "name": "Minghai Huang",
+    "email": "minghaih@tamu.edu",
+    "bio": "Minghai Huang is a postdoc at Texas A&M University exploring SWOT.",
+    "photo_filename": "Huang-Minghai.png",
+    "photo_source": "attachment",
+    "role": "participant"
+  },
+  {
+    "name": "Suyue Li",
+    "email": "suyue.li@tamu.edu",
+    "bio": "Suyue Li is a graduate student at Texas A&M University exploring SWOT and Antarctic coastal currents and sea ice.",
+    "photo_filename": "Li-Suyue.png",
+    "photo_source": "attachment",
+    "role": "participant"
+  },
+  {
+    "name": "Ethan Cruz",
+    "email": "ecruz@seoe.sc.edu",
+    "bio": "Ethan Cruz is a first-year PhD student at the University of South Carolina researching the Loop Current & ocean fronts in the Gulf of Mexico with SWOT, PACE, HYCOM, & Machine Learning",
+    "photo_filename": "Cruz-Ethan.jpeg",
+    "photo_source": "attachment",
+    "role": "participant"
+  },
+  {
+    "name": "Steve Nerem",
+    "email": "nerem@colorado.edu",
+    "bio": "Steve Nerem is a professor at the University of Colorado and a member of the SWOT Science Team. He is using SWOT to study tides and sea level change in coastal and estuarine environments. He is a longtime member of the OSTST and uses satellite altimetry to measure sea level change.",
+    "photo_filename": "Nerem-Steve.jpeg",
+    "photo_source": "attachment",
+    "role": "lecturer"
+  },
+  {
+    "name": "Xiao Ge",
+    "email": "gexiao@tamu.edu",
+    "bio": "Xiao Ge is an Assistant Research Scientist at the Geochemical and Environmental Research Group (GERG), Texas A&M University, specializing in the analysis of ocean observations and numerical model data.",
+    "photo_filename": "Ge-Xiao.jpg",
+    "photo_source": "url",
+    "role": "participant"
+  },
+  {
+    "name": "Jinbo Wang",
+    "email": "jinbo.wang@tamu.edu",
+    "bio": "Jinbo Wang is an associate professor at Texas A&M University specializing in satellite oceanography, SWOT, and machine learning applications for ocean science. His research focuses on unlocking the nonlinear potential of SWOT data and developing AI-enhanced methods for oceanographic analysis. He is a workshop organizer and will give a morning lecture on going nonlinear with SWOT.",
+    "photo_filename": "Wang-Jinbo.png",
+    "photo_source": "url: https://oceanography.tamu.edu/people/faculty/jinbo-wang.html/_files/_images/_feature-images/dept-frontpagephoto-ocng02.jpg",
+    "role": "organizer",
+    "page_url": "https://oceanography.tamu.edu/people/faculty/jinbo-wang.html"
+  },
+  {
+    "name": "Georgy Manucharyan",
+    "email": "gmanuch@uw.edu",
+    "bio": "Georgy Manucharyan is an associate professor at the School of Oceanography, University of Washington, specializing in physical oceanography and machine learning. His research focuses on ocean dynamics, sea ice, and applying ML methods to oceanographic problems. He is a workshop organizer and will give a morning lecture on fundamentals of machine learning for oceanography.",
+    "photo_filename": "Manucharyan-Georgy.png",
+    "photo_source": "not_found",
+    "role": "organizer"
+  },
+  {
+    "name": "Nadya Vinogradova Shiffer",
+    "email": "nadya@nasa.gov",
+    "bio": "Dr. Nadya Vinogradova Shiffer is a science executive at NASA Headquarters, where she leads the Earth Venture Orbital program and directs NASA's Ocean Physics Program, overseeing major satellite missions including SWOT, Sentinel-6, SMAP, and CRISTAL. She provides scientific and strategic direction for competitive science teams, manages a research portfolio with an annual budget in the tens of millions of dollars, and represents NASA in international forums including the United Nations and CEOS. She holds a Ph.D. in Ocean Physics and an M.S. in Applied Mathematics, has authored over 100 scientific publications, and previously held positions at MIT, the Harvard-Smithsonian Center for Astrophysics, and in private industry.",
+    "photo_filename": "Shiffer-Nadya.jpg",
+    "photo_source": "url: https://sealevel.nasa.gov/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbTBKIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1f70fe54045d731440741ea433bf32ce9a6d02e2/Nadya240.jpg?disposition=inline",
+    "role": "organizer"
+  },
+  {
+    "name": "Spencer Jones",
+    "email": "spencerjones@tamu.edu",
+    "bio": "Spencer Jones is a researcher at Texas A&M University interested in leveraging the time dimension for predicting ocean velocities and heat transport. His work focuses on inferring heat transport anomalies from sea surface variables in high-resolution climate model runs. He will present a lightning talk on inferring heat transport anomaly from sea surface variables.",
+    "photo_filename": "Jones-Spencer.jpg",
+    "photo_source": "url: https://oceanography.tamu.edu/people/faculty/spencer-jones.html/_files/_images/_feature-images/dept-frontpagephoto-ocng02.jpg",
+    "role": "participant",
+    "page_url": "https://oceanography.tamu.edu/people/faculty/spencer-jones.html"
+  },
+  {
+    "name": "Kelsey Bisson",
+    "email": "kelsey.bisson@nasa.gov",
+    "bio": "Kelsey Bisson is a Biosphere Program Scientist within the NASA Headquarters Science Mission Directorate. She a Program Scientist for EAGLE-TIR, ECOSTRESS, and GLIMR missions. She is the lead Earth Scientist for Artemis 3.",
+    "photo_filename": "Bisson-Kelsey.jpg",
+    "photo_source": "url: https://science.nasa.gov/wp-content/uploads/2023/12/headshot.jpg?w=448",
+    "role": "invited speaker"
+  },
+  {
+    "name": "Luke Van Roekel",
+    "email": "lvanroekel@lanl.gov",
+    "bio": "Luke Van Roekel is a scientist at Los Alamos National Laboratory working on ocean AI/ML development for the Department of Energy. His research focuses on ocean modeling, parameterization, and applying machine learning to improve climate and ocean simulations. He will give an invited talk on Ocean AI/ML development at DoE.",
+    "photo_filename": null,
+    "photo_source": "not_found",
+    "role": "invited speaker"
+  },
+  {
+    "name": "Ian Fenty",
+    "email": "ian.fenty@jpl.nasa.gov",
+    "bio": "Ian Fenty is a research scientist at NASA's Jet Propulsion Laboratory working on ocean state estimation, data assimilation, and ECCO. His research focuses on integrating satellite and in-situ observations with numerical models to understand ocean circulation and its role in the climate system. He will give an invited talk on NASA ECCO development and challenges for ML.",
+    "photo_filename": "Fenty-Ian.jpg",
+    "photo_source": "JPL Website",
+    "role": "invited speaker"
+  },
+  {
+    "name": "Zhiwen Fan",
+    "email": "zhiwenfan@tamu.edu",
+    "bio": "Zhiwen Fan is a researcher at Texas A&M University working on ocean foundation model architecture. His research focuses on developing large-scale AI models for oceanographic applications, combining satellite observations with deep learning. He will give an invited talk on ocean foundation model architecture.",
+    "photo_filename": "Fan-Zhiwen.jpg",
+    "photo_source": "TAMU website",
+    "role": "invited speaker"
+  },
+  {
+    "name": "Martin Rasmus Kolster",
+    "email": "martin.kolster@colorado.edu",
+    "bio": "Martin Kolster is a PhD student at the University of Colorado Boulder working in satellite remote sensing, sea level science, and physical oceanography. His current research focuses on satellite altimetry, specifically applying spatiotemporal machine learning representations to satellite altimeter measurements. He will give an invited talk on spatiotemporal ML representations of satellite altimeter data.",
+    "photo_filename": "Kolster-Martin.jpg",
+    "photo_source": "LinkedIn",
+    "role": "invited speaker"
+  },
+  {
+    "name": "Lauren Harvey",
+    "email": "lrharvey@ucsd.edu",
+    "bio": "Harvey, Lauren Graduate Student Email: lrharvey@ucsd.edu Update Scripps Profile × Sign Up For Explorations Now Close",
+    "photo_filename": "Harvey-Lauren.jpg",
+    "photo_source": "url: https://scripps.ucsd.edu/sites/default/files/profile_photo/harvey_lauren-10.jpg",
+    "role": "participant"
+  },
+  {
+    "name": "Justin Stopa",
+    "email": "stopa@hawaii.edu",
+    "bio": "Justin Stopa is an associate professor at the University of Hawaii at Manoa specializing in satellite remote sensing, wave modeling, and SAR applications in oceanography. He is interested in building collaborations with ML experts and oceanographic experts to address larger problems in ocean wave prediction and analysis. He will give a morning lecture on introduction to SAR and its applications.",
+    "photo_filename": "Stopa-Justin.jpg",
+    "photo_source": "LinkedIn",
+    "role": "lecturer"
+  },
+  {
+    "name": "Allison Ho",
+    "email": "hoalli@hawaii.edu",
+    "bio": "Allison Ho is a graduate student at the University of Hawaii at Manoa working on oceanographic applications of machine learning. Her research interests include applying ML methods to oceanographic problems. She will present a lightning talk at the workshop.",
+    "photo_filename": "Ho-Allison.jpg",
+    "photo_source": "not_found",
+    "role": "participant"
+  },
+  {
+    "name": "Yannik Glaser",
+    "email": "yglaser@hawaii.edu",
+    "bio": "Yannik Glaser is a postdoc at the University of Hawaii at Manoa with a PhD in Computer Science, specializing in training foundation models for scientific vision problems. His most relevant work includes WV-Net, a foundation model for scientific vision. He will present a lightning talk on pretraining a general-purpose SWOT object detection model.",
+    "photo_filename": "Glaser-Yannik.jpg",
+    "photo_source": "not_found",
+    "role": "participant"
+  },
+  {
+    "name": "Jason Xavier Prochaska",
+    "email": "jxp@ucsc.edu",
+    "bio": "X. Prochaska is a professor at the University of California, Santa Cruz, working at the intersection of astronomy, data science, and machine learning. His research explores exponential growth in data-driven approaches to resolve ocean and atmospheric processes. He will present a lightning talk on riding the exponential to resolve ocean processes.",
+    "photo_filename": "Prochaska-Jason.jpg",
+    "photo_source": "not_found",
+    "role": "participant"
+  },
+  {
+    "name": "Laure Zanna",
+    "email": "laure.zanna@nyu.edu",
+    "bio": "Laure Zanna is a professor at New York University leading the Computational Oceanography and Climate group. Her research aims to advance the fundamental understanding of ocean dynamics and its role in the climate system, developing theory, models, and algorithms including AI for ocean and climate physics. She leads the M2LInES project on multiscale machine learning in coupled Earth system modeling.",
+    "photo_filename": null,
+    "photo_source": "not_found",
+    "role": "participant"
+  },
+  {
+    "name": "Ou Wang",
+    "email": "ou.wang@jpl.nasa.gov",
+    "bio": "Ou Wang is a research scientist at NASA's Jet Propulsion Laboratory working on AI for Arctic sea ice forecasting and gap filling. His research combines machine learning with satellite remote sensing to improve sea ice prediction and analysis. He will present on AI for Arctic sea ice at the workshop.",
+    "photo_filename": null,
+    "photo_source": "not_found",
+    "role": "participant"
+  },
+  {
+    "name": "Hector Torres",
+    "email": "hector.torres.gutierrez@jpl.nasa.gov",
+    "bio": "Hector Torres is a research scientist at NASA's Jet Propulsion Laboratory working on satellite altimetry and ocean physics. His research focuses on SWOT and its applications for ocean dynamics. He will present a lightning talk at the workshop.",
+    "photo_filename": null,
+    "photo_source": "not_found",
+    "role": "participant"
+  },
+  {
+    "name": "Tatsu Monkman",
+    "email": "tm3076@nyu.edu",
+    "bio": "Tatsu Monkman is a researcher at New York University working on diffusion models for satellite data fusion and altimetry data gridding. He is interested in sharing his experience applying diffusion models to oceanographic problems and collaborating with others working on similar ML methods. He will give a morning lecture on using diffusion models for multivariable satellite data fusion.",
+    "photo_filename": "Monkman-Tatsu.jpg",
+    "photo_source": "LinkedIn",
+    "role": "lecturer"
+  },
+  {
+    "name": "Jeffery Early",
+    "email": "jearly@nwra.com",
+    "bio": "Jeffery Early is a research scientist at NorthWest Research Associates working on ocean data analysis and state-space representations. His research focuses on optimal methods for representing and analyzing ocean observations. He will present a lightning talk on toward an optimal state-space representation of ocean data.",
+    "photo_filename": null,
+    "photo_source": "not_found",
+    "role": "participant"
+  },
+  {
+    "name": "Cim Wortham",
+    "email": "cwortham@nwra.com",
+    "bio": "Cim Wortham is a researcher at NorthWest Research Associates working on ocean data analysis and satellite remote sensing. He collaborates with Daniel Neshyba-Rowe on machine learning applications for oceanographic data. They will present a joint lightning talk at the workshop.",
+    "photo_filename": null,
+    "photo_source": "not_found",
+    "role": "participant"
+  },
+  {
+    "name": "Daniel Neshyba-Rowe",
+    "email": "rowedaniel@nwra.com",
+    "bio": "Daniel Neshyba-Rowe is a researcher at NorthWest Research Associates working on ocean data analysis and machine learning applications. He collaborates with Cim Wortham on ML-based approaches for oceanographic problems. They will present a joint lightning talk at the workshop.",
+    "photo_filename": null,
+    "photo_source": "not_found",
+    "role": "participant"
+  },
+  {
+    "name": "Horim Kim",
+    "email": "horimkim@mit.edu",
+    "bio": "Horim Kim is a researcher at MIT working on connecting marine nitrous oxide emissions to ocean vertical transport. His research combines biogeochemical modeling with observational data to understand the role of ocean transport in greenhouse gas emissions. He will present a lightning talk at the workshop.",
+    "photo_filename": "Kim-Horim.jpg",
+    "photo_source": "MIT",
+    "role": "participant"
+  },
+  {
+    "name": "Maya Anjur-Dietrich",
+    "email": "mayaiad@mit.edu",
+    "bio": "Maya Anjur-Dietrich is a postdoc in Professor Sallie Chisholm's lab at MIT, studying biofilm formation in Prochlorococcus. Her background combines quantitative biophysics with marine microbial ecology, and she is motivated to apply machine learning to combine metagenomics and environmental data. She will present a lightning talk on mapping distributions of picocyanobacterial biofilms.",
+    "photo_filename": null,
+    "photo_source": "not_found",
+    "role": "participant"
+  },
+  {
+    "name": "Arjit Seth",
+    "email": "ajseth@utexas.edu",
+    "bio": "Arjit Seth is a PhD student at the University of Texas at Austin with expertise in computational science and applied mathematics, focusing on scientific machine learning. His research applies adjoint-based stochastic parameterization methods to closure models in physical oceanography. He will present a lightning talk on adjoint-based stochastic parameterization for closure models.",
+    "photo_filename": null,
+    "photo_source": "not_found",
+    "role": "participant"
+  },
+  {
+    "name": "Dhruv Apte",
+    "email": "dhruv.apte@utexas.edu",
+    "bio": "Dhruv Apte is a PhD student at the University of Texas at Austin working on probabilistic deep learning for sea-ice velocity estimation. His research focuses on breaking the ice with dual uncertainty approaches for sea ice prediction using SWOT data. He will present a lightning talk on probabilistic deep learning for sea-ice velocity with dual uncertainty.",
+    "photo_filename": "Apte-Dhruv.jpg",
+    "photo_source": "UT Staff",
+    "role": "participant"
+  },
+  {
+    "name": "Tanvir Shahriar",
+    "email": "tanvirshahriar@utexas.edu",
+    "bio": "Tanvir Shahriar is a third-year PhD student in Mechanical Engineering at the University of Texas at Austin, working in physical oceanography, numerical ocean modeling, and scientific machine learning. His research involves implementing the 1-degree DINO configuration in MITgcm and adjoint-based sensitivity analysis of AMOC transport. He will present a lightning talk on this work.",
+    "photo_filename": "Shahriar-Tanvir.jpg",
+    "photo_source": "LinkedIn",
+    "role": "participant"
+  },
+  {
+    "name": "Junwei Hua",
+    "email": "jhua@tamu.edu",
+    "bio": "Junwei Hua is a PhD student at Texas A&M University working on the predictability of subsurface flow from sea surface height using machine learning. His research investigates why providing two snapshots of SSH with sufficient domain coverage can reconstruct subsurface flow structures. He will present a lightning talk on spatiotemporal observability in two-layer geostrophic turbulence.",
+    "photo_filename": "Hua-Junwei.jpg",
+    "photo_source": "TAMU Staff",
+    "role": "participant"
+  },
+  {
+    "name": "Yingjun Zhang",
+    "email": "yingjunz@ucsd.edu",
+    "bio": "Yingjun Zhang is a researcher at the Scripps Institution of Oceanography, UC San Diego, working on oceanographic applications of satellite remote sensing. Their research interests include applying machine learning to oceanographic data analysis. They were originally scheduled to present a lightning talk at the workshop.",
+    "photo_filename": null,
+    "photo_source": "not_found",
+    "role": "participant"
+  },
+  {
+    "name": "Siobhán Johnson",
+    "email": "saj59@cam.ac.uk",
+    "bio": "Siobhan Johnson is a PhD student at the British Antarctic Survey and University of Cambridge, looking to utilize satellite data for sea ice problems. She is interested in learning about SWOT and how it can be coupled with ML to improve front detection and ice melange assessment. She will present a lightning talk on SWOT and its potential for detection and assessment of ice melange.",
+    "photo_filename": null,
+    "photo_source": "not_found",
+    "role": "participant"
+  },
+  {
+    "name": "Aidan Janney",
+    "email": "ajanney@ucar.edu",
+    "bio": "Aidan Janney is a researcher at UCAR/NCAR working on regional emulation of ocean models, specifically MOM6. His research focuses on developing machine learning emulators to replicate high-resolution ocean model behavior at reduced computational cost. He will present a lightning talk on regional emulation of MOM6.",
+    "photo_filename": "Janney-Aidan.png",
+    "photo_source": "LinkedIn",
+    "role": "participant"
+  },
+  {
+    "name": "Feier Yan",
+    "email": "fy2331@columbia.edu",
+    "bio": "Feier Yan is a researcher at Columbia University interested in applying machine learning to ocean dynamics. She is currently working on using diffusion models to reconstruct spatio-temporal ocean states from satellite observations. She is eager to collaborate with others at the intersection of ML and physical oceanography.",
+    "photo_filename": null,
+    "photo_source": "not_found",
+    "role": "participant"
+  },
+  {
+    "name": "Levi Cai",
+    "email": "levi.cai@colorado.edu",
+    "bio": "Levi Cai is a researcher at the University of Colorado Boulder working in oceanographic data analysis and machine learning. His research interests include applying ML methods to satellite oceanography and ocean dynamics. He is a registered participant in the workshop.",
+    "photo_filename": "Cai-Levi.jpg",
+    "photo_source": "Github portfolio",
+    "role": "participant"
+  },
+  {
+    "name": "Eugenio Cutolo",
+    "email": "e.cutolo@atalaia.ai",
+    "bio": "Eugenio Cutolo is a researcher at Atalaia AI working on machine learning applications for oceanographic data. His research focuses on AI-based approaches for ocean analysis and prediction. He will present a lightning talk at the workshop.",
+    "photo_filename": null,
+    "photo_source": "not_found",
+    "role": "participant"
+  },
+  {
+    "name": "Inès Larroche",
+    "email": "ines.larroche@amphitrite.fr",
+    "bio": "Ines Larroche is a second-year PhD student at LOPS (Laboratoire d'Oceanographie Physique et Spatiale) and Amphitrite, working on wave-current interactions. Her research investigates whether machine learning methods can statistically estimate the effects of surface waves on ocean currents. She will present a lightning talk on representing wave-current interactions with machine learning.",
+    "photo_filename": null,
+    "photo_source": "not_found",
+    "role": "participant"
+  },
+  {
+    "name": "Roy An",
+    "email": "ran482@tamu.edu",
+    "bio": "Roy An is a master's student at Texas A&M University working toward a PhD under the guidance of Dr. Jinbo Wang. He is interested in utilizing the full potential of SWOT satellite data for oceanographic applications. He is a registered participant in the workshop.",
+    "photo_filename": "An-Roy.jpeg",
+    "photo_source": "TAMU Staff",
+    "role": "participant"
+  },
+  {
+    "name": "Nayana Venukanthan",
+    "email": "nsv9@tamu.edu",
+    "bio": "Nayana Venukanthan is a first-year PhD student in Oceanography at Texas A&M University under Jinbo Wang. She recently completed her B.S. in Computer Science at Cornell University and plans to develop machine learning methods for oceanographic applications during her PhD. She is a waived participant in the workshop.",
+    "photo_filename": "Venukanthan-Nayana.jpg",
+    "photo_source": "TAMU Staff",
+    "role": "participant"
+  },
+  {
+    "name": "Krishna Calindi",
+    "email": "kxc@tamu.edu",
+    "bio": "Krishna Calindi is an MS in Computer Science graduate student at Texas A&M University with expertise in machine learning. He is eager to contribute ML skills to projects in oceanography and collaborate with domain scientists on applying ML to observational datasets. He is a waived participant in the workshop.",
+    "photo_filename": "Calindi-Krishna.jpg",
+    "photo_source": "added",
+    "role": "participant"
+  },
+  {
+    "name": "Robert Keenan Forney",
+    "email": "rforne2@lsu.edu",
+    "bio": "Robert Keenan Forney is a researcher at the U.S. Naval Research Laboratory with expertise in physical oceanography, including air-sea interactions related to tropical cyclones and ENSO. He has a current research need to investigate foundation modeling for the ocean-atmosphere system. He is a waived participant in the workshop.",
+    "photo_filename": null,
+    "photo_source": "not_found",
+    "role": "participant"
+  },
+  {
+    "name": "Natalie Stamper",
+    "email": "nstamper@seoe.sc.edu",
+    "bio": "Natalie Stamper is a first-year doctoral candidate in Marine Sciences with an emphasis in physical oceanography at the University of South Carolina. She works in the Satellite Oceanography Laboratory, where her research focuses on ocean front dynamics in the Gulf of Mexico using satellite observations and machine learning. She is a registered participant in the workshop.",
+    "photo_filename": null,
+    "photo_source": "not_found",
+    "role": "participant"
+  },
+  {
+    "name": "Sakib Mahmud",
+    "email": "phy.sakib05@gmail.com",
+    "bio": "Sakib Mahmud is a remote participant working on latent signature sensing and ocean current reconstruction from glider flight and science streams. His research focuses on combining physical oceanography with signal processing and machine learning methods. He will present a remote lightning talk on reconstructing ocean currents from glider data.",
+    "photo_filename": null,
+    "photo_source": "not_found",
+    "role": "participant"
+  },
+  {
+    "name": "Scott Martin",
+    "email": "smart1n@uw.edu",
+    "bio": "Scott Martin is a guest participant at the University of Washington's School of Oceanography. He is interested in oceanographic research and machine learning applications. He is a guest at the workshop.",
+    "photo_filename": "Martin-Scott.jpg",
+    "photo_source": "UW Staff",
+    "role": "participant"
+  },
+  {
+    "name": "Andrei Medvedev",
+    "email": "am334@uw.edu",
+    "bio": "Andrei Medvedev is a researcher at the University of Washington working on oceanographic applications. His research interests include applying computational methods to ocean science problems. He will present a lightning talk at the workshop.",
+    "photo_filename": "Medvedev-Andrei.jpg",
+    "photo_source": "UW Staff",
+    "role": "participant"
+  }
+]
