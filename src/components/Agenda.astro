@@ -1,271 +1,343 @@
 <section class="agenda" id="agenda">
+  <div class="title">
     <h2>Agenda</h2>
+    <button class="view-toggle" id="view-toggle">
+      <svg
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <line x1="8" y1="6" x2="21" y2="6"></line>
+        <line x1="8" y1="12" x2="21" y2="12"></line>
+        <line x1="8" y1="18" x2="21" y2="18"></line>
+        <circle cx="4" cy="6" r="1"></circle>
+        <circle cx="4" cy="12" r="1"></circle>
+        <circle cx="4" cy="18" r="1"></circle>
+      </svg>
+    </button>
+  </div>
 
-    <div class="day-nav"></div>
+  <div class="day-nav"></div>
 
-    <div class="grid">
-        <div class="head button" style="grid-column: span 8;">
-            <button class="chg-week">←</button>
-            <p id="week-label">Week 1</p>
-            <button class="chg-week">→</button>
-        </div>
-        <div class="head time">Time</div>
-        <div class="head slot">Monday</div>
-        <div class="head slot">Tuesday</div>
-        <div class="head slot">Wednesday</div>
-        <div class="head slot">Thursday</div>
-        <div class="head slot">Friday</div>
-        <div class="head slot">Saturday</div>
-        <div class="head slot">Sunday</div>
+  <div class="grid">
+    <div class="head button" style="grid-column: span 8;">
+      <button class="chg-week">←</button>
+      <p id="week-label">Week 1</p>
+      <button class="chg-week">→</button>
     </div>
+    <div class="head time">Time</div>
+    <div class="head slot">Monday</div>
+    <div class="head slot">Tuesday</div>
+    <div class="head slot">Wednesday</div>
+    <div class="head slot">Thursday</div>
+    <div class="head slot">Friday</div>
+    <div class="head slot">Saturday</div>
+    <div class="head slot">Sunday</div>
+  </div>
+
+  <div class="list"></div>
 </section>
 
 <script>
-    import { decodeAsync } from "astro:schema";
+  import { decodeAsync } from "astro:schema";
+  import { marked } from "marked";
 
-    const RAW_URL =
-        "https://raw.githubusercontent.com/AI-for-Ocean/workshop2026/refs/heads/main/README.md";
-    let DISPLAY_WEEK = 1;
+  const RAW_URL =
+    "https://raw.githubusercontent.com/AI-for-Ocean/workshop2026/refs/heads/main/README.md";
+  let DISPLAY_WEEK = 1;
 
-    async function fetchSchedule() {
-        const response = await fetch(RAW_URL);
-        const text = await response.text();
-        return text;
-    }
+  async function fetchSchedule() {
+    const response = await fetch(RAW_URL);
+    const text = await response.text();
+    return text;
+  }
 
-    async function parseSchedule() {
-        const text = await fetchSchedule();
-        const lines = text.split("\n");
-        const dayPattern =
-            /##\s*(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday),\s*(July)\s*(\d+).*/;
-        const eventPattern = /-\s*(\d+:\d+).(\d+:\d+)\s*.\s*(.*)/;
-        const days = [];
-        const schedules = [];
+  async function parseSchedule() {
+    const text = await fetchSchedule();
+    const lines = text.split("\n");
+    const dayPattern =
+      /##\s*(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday),\s*(July)\s*(\d+).*/;
+    const eventPattern = /-\s*(\d+:\d+).(\d+:\d+)\s*.\s*(.*)/;
+    const days = [];
+    const schedules = [];
 
-        let lidx = 0;
-        while (lidx < lines.length) {
-            const dayMatch = lines[lidx].match(dayPattern);
-            if (dayMatch) {
-                const daySchedule = [];
-                days.push([dayMatch[1], dayMatch[2], dayMatch[3]]);
+    let lidx = 0;
+    while (lidx < lines.length) {
+      const dayMatch = lines[lidx].match(dayPattern);
+      if (dayMatch) {
+        const daySchedule = [];
+        days.push([dayMatch[1], dayMatch[2], dayMatch[3]]);
 
-                while (true) {
-                    lidx++;
-                    if (lines[lidx].trim() === "") {
-                        continue;
-                    }
+        while (true) {
+          lidx++;
+          if (lines[lidx].trim() === "") {
+            continue;
+          }
 
-                    const lineMatch = lines[lidx].match(eventPattern);
-                    if (lineMatch) {
-                        const [startTime, endTime, fullTitle] = [
-                            lineMatch[1],
-                            lineMatch[2],
-                            lineMatch[3],
-                        ];
-                        const title = fullTitle.match(/.*—(.*)—.*/)?.[1] ?? fullTitle;
-                        let [startHour, startMin] = startTime
-                            .split(":")
-                            .map((v) => Number(v.trim()));
-                        let [endHour, endMin] = endTime
-                            .split(":")
-                            .map((v) => Number(v.trim()));
-                        let startMinutes = startHour * 60 + startMin;
-                        let endMinutes = endHour * 60 + endMin;
-                        if (startMinutes % 10 === 5) startMinutes += 5;
-                        if (endMinutes % 10 === 5) endMinutes += 5;
-                        daySchedule.push([startMinutes, endMinutes, title]);
-                    } else {
-                        schedules.push(daySchedule);
-                        break;
-                    }
-                }
-            } else {
-                lidx++;
-            }
+          const lineMatch = lines[lidx].match(eventPattern);
+          if (lineMatch) {
+            const [startTime, endTime, fullTitle] = [
+              lineMatch[1],
+              lineMatch[2],
+              lineMatch[3],
+            ];
+            const title = fullTitle.match(/.*—(.*)—.*/)?.[1] ?? fullTitle;
+            let [startHour, startMin] = startTime
+              .split(":")
+              .map((v) => Number(v.trim()));
+            let [endHour, endMin] = endTime
+              .split(":")
+              .map((v) => Number(v.trim()));
+            let startMinutes = startHour * 60 + startMin;
+            let endMinutes = endHour * 60 + endMin;
+            if (startMinutes % 10 === 5) startMinutes += 5;
+            if (endMinutes % 10 === 5) endMinutes += 5;
+            daySchedule.push([startMinutes, endMinutes, title]);
+          } else {
+            schedules.push(daySchedule);
+            break;
+          }
         }
-
-        return { days, schedules };
+      } else {
+        lidx++;
+      }
     }
 
-    async function displaySchedule() {
-        const { days, schedules } = await parseSchedule();
-        schedules.push([
-            [9 * 60, 21 * 60, "Thank you for attending AI4Ocean2026!"],
-        ]);
-        schedules.push([
-            [9 * 60, 21 * 60, "Thank you for attending AI4Ocean2026!"],
-        ]);
-        console.log(schedules);
-        const grid = document.querySelector(".grid")!;
-        grid.querySelectorAll(".time-cell, .slot-cell").forEach((el) =>
-            el.remove(),
-        );
-        const startMinutes = 8.5 * 60;
-        const endMinutes = 21 * 60 - 1;
-        const slotMinutes = 10;
-        const EVENT_COLORS = ["#cccccc", "#ffffff"];
+    return { schedules, text };
+  }
 
-        for (
-            let minutes = startMinutes;
-            minutes <= endMinutes;
-            minutes += slotMinutes
-        ) {
-            const hours = Math.floor(minutes / 60);
-            const mins = minutes % 60;
-            const timeStr = `${hours.toString().padStart(2, "0")}:${mins.toString().padStart(2, "0")}`;
+  async function displaySchedule() {
+    const { schedules, text } = await parseSchedule();
+    schedules.push([
+      [9 * 60, 21 * 60, "Thank you for attending AI4Ocean2026!"],
+    ]);
+    schedules.push([
+      [9 * 60, 21 * 60, "Thank you for attending AI4Ocean2026!"],
+    ]);
+    console.log(schedules);
+    const grid = document.querySelector(".grid")!;
+    grid
+      .querySelectorAll(".time-cell, .slot-cell")
+      .forEach((el) => el.remove());
+    const startMinutes = 8.5 * 60;
+    const endMinutes = 21 * 60 - 1;
+    const slotMinutes = 10;
+    const EVENT_COLORS = ["#cccccc", "#ffffff"];
 
-            const timeDiv = document.createElement("div");
-            timeDiv.className = "time-cell";
-            timeDiv.textContent = timeStr;
-            grid.appendChild(timeDiv);
+    for (
+      let minutes = startMinutes;
+      minutes <= endMinutes;
+      minutes += slotMinutes
+    ) {
+      const hours = Math.floor(minutes / 60);
+      const mins = minutes % 60;
+      const timeStr = `${hours.toString().padStart(2, "0")}:${mins.toString().padStart(2, "0")}`;
 
-            const startDay = DISPLAY_WEEK === 1 ? 0 : 7;
-            const endDay = startDay + 7;
-            for (let dayIdx = startDay; dayIdx < endDay; dayIdx++) {
-                const eventIndexInDay =
-                    schedules[dayIdx]?.findIndex(
-                        ([startMin]) => Number(startMin) === minutes,
-                    ) ?? -1;
-                const event =
-                    eventIndexInDay >= 0
-                        ? schedules[dayIdx]?.[eventIndexInDay]
-                        : undefined;
-                if (event) {
-                    const [startMin, endMin, title] = event as [
-                        number,
-                        number,
-                        string,
-                    ];
-                    const duration = endMin - startMin;
-                    const span = Math.max(
-                        1,
-                        duration % slotMinutes === 0
-                            ? duration / slotMinutes
-                            : Math.ceil(duration / slotMinutes),
-                    );
-                    const slotDiv = document.createElement("div");
-                    slotDiv.className = "slot-cell";
-                    slotDiv.textContent = title;
-                    slotDiv.style.gridRow = `span ${span}`;
-                    const color =
-                        EVENT_COLORS[
-                            ((((dayIdx % 7) + 6) % 7) + eventIndexInDay) %
-                                EVENT_COLORS.length
-                        ];
-                    slotDiv.style.backgroundColor = color;
-                    // slotDiv.style.border = `1px solid #000000`;
-                    grid.appendChild(slotDiv);
-                } else {
-                    if (
-                        schedules[dayIdx]?.some(
-                            ([startMin, endMin]) =>
-                                Number(startMin) <= minutes &&
-                                minutes < Number(endMin),
-                        )
-                    ) {
-                        continue;
-                    }
-                    const emptyDiv = document.createElement("div");
-                    emptyDiv.className = "slot-cell";
-                    emptyDiv.style.borderTop = "none";
-                    emptyDiv.style.borderBottom = "none";
-                    grid.appendChild(emptyDiv);
-                }
-            }
+      const timeDiv = document.createElement("div");
+      timeDiv.className = "time-cell";
+      timeDiv.textContent = timeStr;
+      grid.appendChild(timeDiv);
+
+      const startDay = DISPLAY_WEEK === 1 ? 0 : 7;
+      const endDay = startDay + 7;
+      for (let dayIdx = startDay; dayIdx < endDay; dayIdx++) {
+        const eventIndexInDay =
+          schedules[dayIdx]?.findIndex(
+            ([startMin]) => Number(startMin) === minutes,
+          ) ?? -1;
+        const event =
+          eventIndexInDay >= 0
+            ? schedules[dayIdx]?.[eventIndexInDay]
+            : undefined;
+        if (event) {
+          const [startMin, endMin, title] = event as [number, number, string];
+          const duration = endMin - startMin;
+          const span = Math.max(
+            1,
+            duration % slotMinutes === 0
+              ? duration / slotMinutes
+              : Math.ceil(duration / slotMinutes),
+          );
+          const slotDiv = document.createElement("div");
+          slotDiv.className = "slot-cell";
+          slotDiv.textContent = title;
+          slotDiv.style.gridRow = `span ${span}`;
+          const color =
+            EVENT_COLORS[
+              ((((dayIdx % 7) + 6) % 7) + eventIndexInDay) % EVENT_COLORS.length
+            ];
+          slotDiv.style.backgroundColor = color;
+          // slotDiv.style.border = `1px solid #000000`;
+          grid.appendChild(slotDiv);
+        } else {
+          if (
+            schedules[dayIdx]?.some(
+              ([startMin, endMin]) =>
+                Number(startMin) <= minutes && minutes < Number(endMin),
+            )
+          ) {
+            continue;
+          }
+          const emptyDiv = document.createElement("div");
+          emptyDiv.className = "slot-cell";
+          emptyDiv.style.borderTop = "none";
+          emptyDiv.style.borderBottom = "none";
+          grid.appendChild(emptyDiv);
         }
+      }
     }
 
-    displaySchedule();
+    const div = document.querySelector(".list")!;
+    div.innerHTML = "";
+    div.innerHTML = await marked(text);
+  }
 
-    document.querySelectorAll(".chg-week").forEach((btn) => {
-        btn.addEventListener("click", () => {
-            DISPLAY_WEEK = DISPLAY_WEEK === 1 ? 2 : 1;
-            displaySchedule();
-            document.getElementById("week-label")!.textContent =
-                `Week ${DISPLAY_WEEK}`;
-        });
+  displaySchedule();
+
+  document.querySelectorAll(".chg-week").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      DISPLAY_WEEK = DISPLAY_WEEK === 1 ? 2 : 1;
+      displaySchedule();
+      document.getElementById("week-label")!.textContent =
+        `Week ${DISPLAY_WEEK}`;
     });
+  });
+
+  const toggle = document.getElementById("view-toggle");
+  const grid = document.querySelector(".grid") as HTMLElement;
+  const list = document.querySelector(".list") as HTMLElement;
+  const svg = toggle?.querySelector("svg");
+
+  toggle?.addEventListener("click", () => {
+    if (list.style.display !== "block") {
+      grid.style.display = "none";
+      list.style.display = "block";
+      svg!.innerHTML = '<rect x="3" y="3" width="5" height="5"></rect><rect x="13" y="3" width="8" height="8"></rect><rect x="3" y="13" width="8" height="8"></rect><rect x="13" y="13" width="8" height="8"></rect>';
+    } else {
+      grid.style.display = "grid";
+      list.style.display = "none";
+      svg!.innerHTML = '<line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><circle cx="4" cy="6" r="1"></circle><circle cx="4" cy="12" r="1"></circle><circle cx="4" cy="18" r="1"></circle>';
+    }
+  });
 </script>
 
 <style>
-    .agenda {
-        margin: 0 auto;
-        padding: 0 0.4rem;
-        overflow-x: auto;
-    }
-
-    .grid {
-        display: grid;
-        grid-template-columns: 5rem 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-auto-rows: 1.3rem;
-        border: 1px solid #000000;
-    }
-
-    .head {
-        padding: 10px 12px;
-        font-weight: 700;
-        background: #f1f5f9;
-        color: #0f172a;
-    }
-
-    .head.slot,
-    .head.time,
-    .head.button {
-        display: inline-flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .head.button {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        gap: 1rem;
-    }
-
-    .head button {
-        width: 1rem;
-        height: 0.9rem;
-        border: none;
-        background-color: inherit;
-        color: #000000;
-        appearance: none;
-        -webkit-appearance: none;
-        cursor: pointer;
-    }
-
-    .head.time,
-    .head.slot,
-    .head.button {
-        border: 1px solid #000000;
-    }
-
-    @media (min-width: 768px) {
   .agenda {
-      padding: 0 5rem;
+    margin: 0 auto;
+    padding: 0 0.4rem;
+    margin-bottom: 0.2rem;
   }
-}
+
+  .title {
+    display: flex;
+    position: relative;
+    align-items: center;
+  }
+
+  .view-toggle {
+    border: none;
+    background: #fff;
+    cursor: pointer;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+  }
+
+  .list {
+    display: none;
+    border: 1px solid #ccc;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 5rem 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 1.3rem;
+    border: 1px solid #000000;
+    overflow-x: auto;
+  }
+
+  .head {
+    padding: 10px 12px;
+    font-weight: 700;
+    background: #f1f5f9;
+    color: #0f172a;
+  }
+
+  .head.slot,
+  .head.time,
+  .head.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .head.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .head button {
+    width: 1rem;
+    height: 0.9rem;
+    border: none;
+    background-color: inherit;
+    color: #000000;
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+  }
+
+  .head.time,
+  .head.slot,
+  .head.button {
+    border: 1px solid #000000;
+  }
+
+  .head.time {
+    position: sticky;
+    left: 0;
+  }
+
+  @media (min-width: 768px) {
+    .agenda {
+      padding: 0 5rem;
+    }
+  }
 </style>
 
 <style is:global>
-    .time-cell {
-        border: 1px solid #000000;
-        padding: 4px 10px;
-        font-size: 0.9rem;
-        color: #475569;
-        font-variant-numeric: tabular-nums;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-    }
+  .time-cell {
+    position: sticky;
+    left: 0;
+    border: 1px solid #000000;
+    padding: 4px 10px;
+    font-size: 0.9rem;
+    color: #475569;
+    background: #fff;
+    font-variant-numeric: tabular-nums;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
 
+  .slot-cell {
+    border: 1px solid #000000;
+    padding: 4px 10px;
+    overflow: hidden;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: top;
+    justify-content: flex-start;
+  }
+
+  @media (max-width: 768px) {
     .slot-cell {
-        border: 1px solid #000000;
-        padding: 4px 10px;
-        overflow: hidden;
-        font-size: 0.9rem;
-        display: flex;
-        align-items: top;
-        justify-content: flex-start;
+      min-width: 13rem;
     }
+  }
 </style>

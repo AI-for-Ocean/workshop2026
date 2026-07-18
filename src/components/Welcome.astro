@@ -10,7 +10,7 @@ import oceanBg from "../assets/background.png";
         <h1>AI4Ocean 2026 Workshop</h1>
 
         <div class="meta-row">
-            <p class="meta" style="white-space: nowrap;">
+            <p class="meta">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -25,7 +25,7 @@ import oceanBg from "../assets/background.png";
                 <span>20 - 31 July</span>
             </p>
 
-            <button class="meta location-btn" style="white-space: wrap;">
+            <button class="meta location-btn">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -85,12 +85,13 @@ import oceanBg from "../assets/background.png";
         max-width: min(100%, 500px);
         font-size: 1.2rem;
         font-weight: 500;
-        margin: 0;
+        margin-top: 1rem;
     }
 
     .meta-row {
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        align-items: left;
         max-width: min(100%, 500px);
     }
 
@@ -100,16 +101,17 @@ import oceanBg from "../assets/background.png";
         font-size: 1.3rem;
         font-weight: 700;
         padding: 0;
+        
     }
 
     .meta svg {
         width: 1.2rem;
         height: 1.2rem;
-        padding-right: 0.5rem;
         stroke: currentColor;
         fill: none;
         stroke-width: 2;
         flex-shrink: 0;
+        padding-right: 0.4rem;
     }
 
     .location-btn {
@@ -120,18 +122,16 @@ import oceanBg from "../assets/background.png";
         font-size: 1.2rem;
         font-weight: 700;
         cursor: pointer;
-        padding: 0 0 0 0.5rem;
-        display: inline-flex;
-        align-items: center; 
+    }
+
+    .location-btn span {
+        max-width: inherit;
+        text-align: left;
     }
 
     @media (min-width: 768px) {
         .welcome {
             padding: 0 5rem;
-        }
-
-        .meta {
-            white-space: nowrap;
         }
     }
 </style>

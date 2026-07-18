@@ -78,57 +78,130 @@ const headshots = {
 ---
 
 <section id="team" class="team">
-  <h2>Meet the team</h2>
+  <div class="title">
+    <h2>Meet the team</h2>
+    <button class="filter-toggle" id="filter-toggle">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+      </svg>
+    </button>
+    <div class="filter-menu" id="filter-menu">
+      <label><input type="checkbox" value="organizer" class="role-filter" checked> Organizer</label>
+      <label><input type="checkbox" value="lecturer" class="role-filter" checked> Lecturer</label>
+      <label><input type="checkbox" value="invited speaker" class="role-filter" checked> Invited speaker</label>
+      <label><input type="checkbox" value="advisory" class="role-filter" checked> Advisory</label>
+      <label><input type="checkbox" value="participant" class="role-filter" checked> Participant</label>
+    </div>
+  </div>
 
-  {
-    ["organizer", "lecturer", "invited speaker", "participant"].map(
-      (role) => (
-        <div class="role-section">
-          <h3>{role.charAt(0).toUpperCase() + role.slice(1) + "s"}</h3>
-          <div class="team-grid" >
-            {teamData
-              .filter((m) => m.role === role)
-              .map((member) => (
-                <div class="team-card" onclick={`document.getElementById('popup-${member.email}').showModal()`}>
-                  <Image
-                    src={headshots[member.photo_filename as keyof typeof headshots] || placeholderImg}
-                    alt={member.name}
-                    class="team-photo"
-                  />
-                  <div class="details">
-                  <h4>{member.name}</h4>
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-  <polyline points="15 3 21 3 21 9" />
-  <line x1="10" y1="14" x2="21" y2="3" />
-</svg>
-                  </div>
-                </div>
-
-                <dialog id={`popup-${member.email}`} class="bio-popup">
-          <div class="popup-content">
-            <button class="close-btn" onclick="this.closest('dialog').close()">✕</button>
-            <Image
-              src={headshots[member.photo_filename as keyof typeof headshots] || placeholderImg}
-              alt={member.name}
-              class="popup-photo"
+  <div class="team-grid">
+    {teamData.map((member) => (
+      <div class="team-card" data-role={member.role} onclick={`document.getElementById('popup-${member.email}').showModal()`}>
+        <Image
+          src={headshots[member.photo_filename as keyof typeof headshots] || placeholderImg}
+          alt={member.name}
+          class="team-photo"
         />
-            <h3>{member.name}</h3>
-            <p class="popup-bio">{member.bio}</p>
-          </div>
-        </dialog>
-              ))}
-          </div>
+        <div class="badges">
+          {(Array.isArray(member.role) ? member.role : [member.role]).map((role) => (
+            <div class={`badge badge-${role.replace(' ', '-')}`}>
+              {role.charAt(0).toUpperCase() + role.slice(1)}
+            </div>
+          ))}
         </div>
-      ),
-    )
-  }
+        <div class="details">
+          <h4>{member.name}</h4>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+            <polyline points="15 3 21 3 21 9" />
+            <line x1="10" y1="14" x2="21" y2="3" />
+          </svg>
+        </div>
+      </div>
+
+      <dialog id={`popup-${member.email}`} class="bio-popup">
+        <div class="popup-content">
+          <button class="close-btn" onclick="this.closest('dialog').close()">✕</button>
+          <Image
+            src={headshots[member.photo_filename as keyof typeof headshots] || placeholderImg}
+            alt={member.name}
+            class="popup-photo"
+          />
+          <h3>{member.name}</h3>
+          <p class="popup-bio">{member.bio}</p>
+        </div>
+      </dialog>
+    ))}
+  </div>
 </section>
+
+<script>
+  const toggle = document.getElementById("filter-toggle")!;
+  const menu = document.getElementById("filter-menu")!;
+  
+  toggle.addEventListener("click", () => menu.classList.toggle("active"));
+  
+  document.querySelectorAll(".role-filter").forEach((checkbox) => {
+    checkbox.addEventListener("change", () => {
+      const selected = Array.from(document.querySelectorAll(".role-filter:checked")).map(c => (c as HTMLInputElement).value);
+      document.querySelectorAll(".team-card").forEach((card) => {
+        const roles = (card as HTMLElement).dataset.role?.split(',').map(r => r.trim()) || [];
+        if (roles.some(role => selected.includes(role))) {
+          card.classList.remove("hidden");
+        } else {
+          card.classList.add("hidden");
+        }
+      });
+    });
+  });
+</script>
+
 
 <style>
   .team {
     padding: 0 0.4rem;
     margin-bottom: 0.2rem;
+  }
+
+  .title {
+    display: flex;
+    position: relative;
+    align-items: center;
+  }
+
+  .filter-toggle {
+    border: none;
+    background: #fff;
+    cursor: pointer;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+  }
+
+  .filter-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 4px;
+    padding: 0.5rem;
+    flex-direction: column;
+    z-index: 10;
+  }
+
+  .filter-menu.active {
+    display: flex;
+  }
+
+  .filter-menu label {
+    cursor: pointer;
+    padding: 0.25rem;
+  }
+
+  .filter-menu input {
+    margin-right: 0.5rem;
   }
 
   .role-section {
@@ -152,10 +225,56 @@ const headshots = {
     cursor: pointer;
   }
 
+  .team-card.hidden {
+    display: none;
+  }
+
   .team-photo {
     width: 15rem;
     height: 18rem;
     object-fit: cover;
+  }
+
+  .badges {
+    width: inherit;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+  }
+
+  .badge {
+    background-color: #000;
+    color: #fff;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    width: fit-content;
+  }
+
+  .badge-organizer {
+    background-color: #ffd700;
+    color: black;
+  }
+
+  .badge-lecturer {
+    background-color: purple;
+  }
+
+  .badge-invited-speaker {
+    background-color: blue;
+    color: white;
+  }
+
+  .badge-participant {
+    background-color: seagreen;
+    color: white;
+  }
+
+  .badge-advisory {
+    background-color: #d946a6;
+    color: white;
   }
 
 
@@ -166,50 +285,50 @@ const headshots = {
   }
 
   .bio-popup {
-  border: none;
-  border-radius: 8px;
-  padding: 0;
-  max-width: 500px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
-}
+    border: none;
+    border-radius: 8px;
+    padding: 0;
+    max-width: 500px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  }
 
-.bio-popup::backdrop {
-  background: rgba(0, 0, 0, 0.5);
-}
+  .bio-popup::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+  }
 
-.popup-content {
-  padding: 2rem;
-  position: relative;
-}
+  .popup-content {
+    padding: 2rem;
+    position: relative;
+  }
 
-.close-btn {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-  color: #666;
-}
+  .close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #666;
+  }
 
-.close-btn:hover {
-  color: #000;
-}
+  .close-btn:hover {
+    color: #000;
+  }
 
-.popup-photo {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 4px;
-  margin-bottom: 1rem;
-}
+  .popup-photo {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
 
-.popup-bio {
-  color: #555;
-  line-height: 1.6;
-  margin: 0;
-}
+  .popup-bio {
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+  }
     a,
     a:visited,
     a:hover,
