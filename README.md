@@ -1,7 +1,9 @@
 # AI4Ocean Workshop 2026 
 
 **Dates:** July 20–31, 2026
+
 **Venue:** School of Oceanography, [Ocean Science Building](https://maps.app.goo.gl/NnW2p64xSZhc83V5A), University of Washington
+
 **Times:** Pacific Time. Simple breakfast and lunch box provided Jul 20–22.
 
 > Invited talks: 20 min + 20 min discussion (40 min total)
