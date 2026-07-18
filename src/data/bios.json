@@ -212,9 +212,9 @@
   {
     "name": "Jeffery Early",
     "email": "jearly@nwra.com",
-    "bio": "Jeffery Early is a research scientist at NorthWest Research Associates working on ocean data analysis and state-space representations. His research focuses on optimal methods for representing and analyzing ocean observations. He will present a lightning talk on toward an optimal state-space representation of ocean data.",
-    "photo_filename": null,
-    "photo_source": "not_found",
+    "bio": "Jeffrey Early is a senior research scientist at NWRA in Seattle working to connect theory and modeling in geophysical fluid dynamics to ocean observations.",
+    "photo_filename": "Early-Jeffery.jpeg",
+    "photo_source": "attachment",
     "role": "participant"
   },
   {
@@ -244,9 +244,9 @@
   {
     "name": "Maya Anjur-Dietrich",
     "email": "mayaiad@mit.edu",
-    "bio": "Maya Anjur-Dietrich is a postdoc in Professor Sallie Chisholm's lab at MIT, studying biofilm formation in Prochlorococcus. Her background combines quantitative biophysics with marine microbial ecology, and she is motivated to apply machine learning to combine metagenomics and environmental data. She will present a lightning talk on mapping distributions of picocyanobacterial biofilms.",
-    "photo_filename": null,
-    "photo_source": "not_found",
+    "bio": "Maya Anjur-Dietrich is a postdoctoral fellow at MIT studying particle formation and biofilms in picocyanobacteria and their influence on marine carbon cycling",
+    "photo_filename": "Dietrich-Maya.jpg",
+    "photo_source": "attachment",
     "role": "participant"
   },
   {
@@ -356,7 +356,7 @@
   {
     "name": "Krishna Calindi",
     "email": "kxc@tamu.edu",
-    "bio": "Krishna Calindi is an MS in Computer Science graduate student at Texas A&M University with expertise in machine learning. He is eager to contribute ML skills to projects in oceanography and collaborate with domain scientists on applying ML to observational datasets. He is a waived participant in the workshop.",
+    "bio": "Krishna Calindi has a MS in Computer Science from  Texas A&M University with thesis research in storm severity prediction using lightning  data. He is eager to contribute ML skills to projects in oceanography and collaborate with domain scientists. He is a waived participant in the workshop.",
     "photo_filename": "Calindi-Krishna.jpg",
     "photo_source": "added",
     "role": "participant"
