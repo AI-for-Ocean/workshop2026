@@ -104,13 +104,11 @@ const headshots = {
                 <dialog id={`popup-${member.email}`} class="bio-popup">
           <div class="popup-content">
             <button class="close-btn" onclick="this.closest('dialog').close()">✕</button>
-            <img 
-              src={member.photo_filename 
-                ? `/src/assets/headshots/${member.photo_filename}` 
-                : '/src/assets/headshots/placeholder.png'} 
-              alt={member.name} 
-              class="popup-photo" 
-            />
+            <Image
+              src={headshots[member.photo_filename as keyof typeof headshots] || placeholderImg}
+              alt={member.name}
+              class="popup-photo"
+        />
             <h3>{member.name}</h3>
             <p class="popup-bio">{member.bio}</p>
           </div>
