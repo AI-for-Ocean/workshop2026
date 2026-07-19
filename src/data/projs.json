@@ -1,0 +1,22 @@
+[
+    {
+        "title": "SWOT unsmoothed product denoise",
+        "thumb": "24bf9.png",
+        "desc": "SWOT provides high resolution (250 meter pixels) sea surface height measurements in a 120 km wide swath, but with large noise field. Reducing/removing the noise to expose the sea surface height signal, which is very weak at small scales <10km is important for maximizing SWOT’s utility."
+    },
+    {
+        "title": "Unsupervised image segmentation for filtering clouds from satellite SST observations",
+        "thumb": "9ba5b.png",
+        "desc": "Removing clouds from satellite-borne SST measurements requires complex, multi-channel filtering algorithms that struggle to remove anomalies at cloud edges and from partially-cloud-contaminated pixels. In some cases, an expert human observer is better at distinguishing subtle cloud-contamination by eye, leading me (and many others) to speculate that a ML-based pattern-recognition algorithm might be applicable."
+    },
+    {
+        "title": "Experimenting with conditional generative diffusion models",
+        "thumb": "ac61ea.png",
+        "desc": "Generative diffusion models are a powerful tool for generating ensembles of multi-scale oceanic fields such as sea surface temperature (SST), but conditioning the models to generate output with specific physical characteristics is usually performed on an ad hoc basis. Most of the “conditioning” used in the context of generating geophysical fields takes the form of conditioning on low-resolution fields (i.e. during upsampling) or by embedding time information such as calendar date. A simple beginner project could be to instead condition a diffusion model on physically relevant quantities such as locally-averaged Coriolis frequency, tile-integrated kinetic energy, rossby radius of deformation, or anything else you can think of while training it on the task of generating realistic SST evolution or surface velocity fields."
+    },
+    {
+        "title": "Mapping Antarctic Sea Ice and Leads Through Fusion of SWOT and ICESat-2 Data",
+        "thumb": "a3efe.png",
+        "desc": "Combining multi satellite components (including SWOT and ICESat-2) can provide complementary information on sea-ice surface height and lead distribution. However, these two datasets have different resolutions, temporal sampling, and measurement physics, making direct fusion challenging. The project goal is to train SWOT (250m, Version D) and ICESat-2 (ATL07) data to identify leads and sea ice in the Antarctic region via machine learning."
+    }
+]

@@ -1,0 +1,83 @@
+---
+import { Image } from "astro:assets";
+import projectData from "../data/projs.json";
+
+import thumb24bf9 from "../assets/thumbs/24bf9.png";
+import thumb9ba5b from "../assets/thumbs/9ba5b.png";
+import thumbac61ea from "../assets/thumbs/ac61ea.png";
+import thuma3efe from "../assets/thumbs/a3efe.png";
+
+const thumbnails = {
+  "24bf9.png": thumb24bf9,
+  "9ba5b.png": thumb9ba5b,
+  "ac61ea.png": thumbac61ea,
+  "a3efe.png": thuma3efe,
+};
+---
+
+<section class="projects" id="projects">
+  <h2>Projects</h2>
+  <div class="projects-grid">
+    {
+      projectData.map((project) => (
+        <div class="project-card">
+          <Image
+            src={thumbnails[project.thumb as keyof typeof thumbnails]}
+            alt={project.title}
+            class="project-thumb"
+          />
+          <div class="project-desc">
+            <h3>{project.title}</h3>
+            <p>{project.desc}</p>
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</section>
+
+<style>
+  .projects {
+    padding: 0 0.4rem;
+    margin-bottom: 0.2rem;
+    box-sizing: border-box;
+  }
+
+  .projects-grid {
+    display: grid;
+
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .project-card {
+    display: flex;
+    flex-direction: row;
+    padding: 0.2rem;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    align-items: start;
+    justify-content: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .project-desc {
+    
+  }
+
+  .project-thumb {
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+  }
+
+  @media (min-width: 768px) {
+    .projects-grid {
+      grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    }
+
+    .projects {
+      padding: 0 5rem;
+    }
+  }
+</style>
