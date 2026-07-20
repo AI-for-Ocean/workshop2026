@@ -15,7 +15,7 @@
 
 - 8:30-9:00 - Light breakfast (muffins, bagels, yogurt, coffee)
 - 9:00–9:40 — Welcome & Opening Remarks — Georgy Manucharyan, Jinbo Wang, Nadya Vinogradova Shiffer
-- 9:40–10:20 — Invited Talk — Luke Van Roekel (LANL) — Ocean AI/ML development at DoE
+- 9:40–10:20 — Invited Talk — Luke Van Roekel (LANL) — AI@DOE
 - 10:20–10:50 — Coffee Break
 - 10:50–11:10 — Lightning Talk — Arjit Seth (UT Austin) — Adjoint-based Stochastic Parameterization for Closure Models in Physical Oceanography
 - 11:10–11:30 — Lightning Talk — X. Prochaska (UC Santa Cruz) — Riding the exponential to resolve ocean processes
