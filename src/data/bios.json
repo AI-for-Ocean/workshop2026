@@ -118,7 +118,7 @@
   {
     "name": "Roy An",
     "email": "ran482@tamu.edu",
-    "bio": "Roy An is a master's student at Texas A&M University working toward a PhD under the guidance of Dr. Jinbo Wang. He is interested in utilizing the full potential of SWOT satellite data for oceanographic applications. He is a registered participant in the workshop.",
+    "bio": "Roy An is a graduate student at Texas A&M University exploring internal waves using in situ observation networks and the capability of SWOT.",
     "photo_filename": "An-Roy.jpeg",
     "photo_source": "TAMU Staff",
     "role": [
@@ -291,6 +291,16 @@
     "bio": "Aidan Janney is a researcher at UCAR/NCAR working on regional emulation of ocean models, specifically MOM6. His research focuses on developing machine learning emulators to replicate high-resolution ocean model behavior at reduced computational cost. He will present a lightning talk on regional emulation of MOM6.",
     "photo_filename": "Janney-Aidan.png",
     "photo_source": "LinkedIn",
+    "role": [
+      "participant"
+    ]
+  },
+  {
+    "name": "Kaden Jimenez",
+    "email": "",
+    "bio": "Kade Jimenez is a graduate student at the University of Hawaiʻi at Mānoa exploring the use of satellite imagery and machine learning to better understand air-sea interaction.",
+    "photo_filename": "Jimenez-Kaden.jpg",
+    "photo_source": "attachment",
     "role": [
       "participant"
     ]
@@ -497,11 +507,11 @@
   {
     "name": "Yingjun Zhang",
     "email": "yingjunz@ucsd.edu",
-    "bio": "Yingjun Zhang is a researcher at the Scripps Institution of Oceanography, UC San Diego, working on oceanographic applications of satellite remote sensing. Their research interests include applying machine learning to oceanographic data analysis. They were originally scheduled to present a lightning talk at the workshop.",
-    "photo_filename": null,
-    "photo_source": "not_found",
+    "bio": "Yingjun Zhang is a postdoctoral scholar at the Scripps Institution of Oceanography, UC San Diego, whose current research focuses on SWOT, ocean eddies, and air-sea interactions.",
+    "photo_filename": "Zhang-Yingjun.jpg",
+    "photo_source": "attachment",
     "role": [
       "participant"
-    ]
+  ]
   }
 ]
