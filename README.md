@@ -84,7 +84,7 @@
 
 ## Thursday, July 23
 
-- 9:00–10:00 — Morning Lecture — Steve Nerem (University of Colorado) — Introduction to Satellite Altimetry and Satellite Gravity for the Oceans
+- 9:00–10:00 — Morning Lecture — Georgy Manucharyan (UW) — Fundamentals of machine learning for oceanography
 - 10:00–10:30 — Project check-in (all teams)
 - 10:30–12:00 — Project work (or optional ad-hoc talks)
 - 12:00–13:30 — Lunch (on your own)
@@ -94,7 +94,7 @@
 
 ## Friday, July 24
 
-- 9:00–10:00 — Morning Lecture — Georgy Manucharyan (UW) — Fundamentals of machine learning for oceanography
+- 9:00–10:00 — Morning Lecture — Steve Nerem (University of Colorado) — Introduction to Satellite Altimetry and Satellite Gravity for the Oceans
 - 10:00–10:30 — Project check-in (all teams)
 - 10:30–12:00 — Project work (or optional ad-hoc talks)
 - 12:00–13:30 — Lunch (on your own)
