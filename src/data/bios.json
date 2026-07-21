@@ -475,11 +475,11 @@
     ]
   },
   {
-    "name": "Cim Wortham",
+    "name": "Cimarron Wortham",
     "email": "cwortham@nwra.com",
-    "bio": "Cim Wortham is a researcher at NorthWest Research Associates working on ocean data analysis and satellite remote sensing. He collaborates with Daniel Neshyba-Rowe on machine learning applications for oceanographic data. They will present a joint lightning talk at the workshop.",
-    "photo_filename": null,
-    "photo_source": "not_found",
+    "bio": "Cimarron Wortham is a research scientist at NWRA, working on improving mapped altimetry products and understanding the energy pathways of internal waves.",
+    "photo_filename": "Wortham-Cim.jpg",
+    "photo_source": "attachment",
     "role": [
       "participant"
     ]
