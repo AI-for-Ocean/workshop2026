@@ -76,9 +76,9 @@
   {
     "name": "Luke Van Roekel",
     "email": "lvanroekel@lanl.gov",
-    "bio": "Luke Van Roekel is a scientist at Los Alamos National Laboratory working on ocean AI/ML development for the Department of Energy. His research focuses on ocean modeling, parameterization, and applying machine learning to improve climate and ocean simulations. He will give an invited talk on Ocean AI/ML development at DoE.",
-    "photo_filename": null,
-    "photo_source": "not_found",
+    "bio": "Luke Van Roekel is a research scientist at Los Alamos National Laboratory exploring small scale ocean processes and their effect on the global Earth system through a hierarchy of models.",
+    "photo_filename": "VanRoekel-Luke.jpg",
+    "photo_source": "attachment",
     "role": [
       "invited speaker",
       "advisory"
