@@ -1,0 +1,55 @@
+---
+import TopBar from "../components/TopBar.astro";
+import Activities from "../components/Activities.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width"
+			viewport-fit='cover"/'
+		/>
+		<link rel="icon" type="image/png" href="/workshop2026/favicon.png" />
+		<link rel="icon" href="/workshop2026/favicon.ico" />
+		<meta name="generator" content={Astro.generator} />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Activities</title>
+	</head>
+	<body>
+		<TopBar />
+
+		<Activities />
+
+		<Footer />
+	</body>
+</html>
+
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+	}
+
+	:root {
+		--header-h: 10vh;
+	}
+
+	html,
+	body {
+		width: 100%;
+		font-family: "Roboto", Arial, sans-serif;
+	}
+
+	 @media (min-width: 768px) {
+        :root {
+		--header-h: 5vh;
+	}
+    }
+</style>
