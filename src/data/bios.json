@@ -60,7 +60,8 @@
     "photo_filename": "Monkman-Tatsu.jpg",
     "photo_source": "LinkedIn",
     "role": [
-      "lecturer"
+      "lecturer",
+      "session chair"
     ]
   },
   {
@@ -152,7 +153,8 @@
     "photo_filename": "Bai-Yue.png",
     "photo_source": "attachment",
     "role": [
-      "participant"
+      "participant",
+      "session chair"
     ]
   },
   {
@@ -248,7 +250,7 @@
   {
     "name": "Lauren Harvey",
     "email": "lrharvey@ucsd.edu",
-    "bio": "Harvey, Lauren Graduate Student Email: lrharvey@ucsd.edu Update Scripps Profile \u00d7 Sign Up For Explorations Now Close",
+    "bio": "Harvey, Lauren Graduate Student Email: lrharvey@ucsd.edu Update Scripps Profile × Sign Up For Explorations Now Close",
     "photo_filename": "Harvey-Lauren.jpg",
     "photo_source": "url: https://scripps.ucsd.edu/sites/default/files/profile_photo/harvey_lauren-10.jpg",
     "role": [
@@ -262,7 +264,8 @@
     "photo_filename": "Ho-Allison.jpg",
     "photo_source": "not_found",
     "role": [
-      "participant"
+      "participant",
+      "session chair"
     ]
   },
   {
@@ -292,7 +295,8 @@
     "photo_filename": "Janney-Aidan.png",
     "photo_source": "LinkedIn",
     "role": [
-      "participant"
+      "participant",
+      "session chair"
     ]
   },
   {
@@ -306,13 +310,14 @@
     ]
   },
   {
-    "name": "Siobh\u00e1n Johnson",
+    "name": "Siobhán Johnson",
     "email": "saj59@cam.ac.uk",
     "bio": "Siobhán Johnson has recently finished her PhD at the University of Cambridge and British Antarctic Survey working on the organic content of Antarctic sea ice. Her focus now is on improving remote sensing techniques for detection of sea ice in rifts, ice mélange and along coastal Antarctica.",
     "photo_filename": "Johnson-Siobhan.jpg",
     "photo_source": "attachment",
     "role": [
-      "participant"
+      "participant",
+      "session chair"
     ]
   },
   {
@@ -337,7 +342,7 @@
     ]
   },
   {
-    "name": "In\u00e8s Larroche",
+    "name": "Inès Larroche",
     "email": "ines.larroche@amphitrite.fr",
     "bio": "Ines Larroche is a second-year PhD student at LOPS (Laboratoire d'Oceanographie Physique et Spatiale) and Amphitrite, working on wave-current interactions. Her research investigates whether machine learning methods can statistically estimate the effects of surface waves on ocean currents. She will present a lightning talk on representing wave-current interactions with machine learning.",
     "photo_filename": null,
@@ -512,6 +517,6 @@
     "photo_source": "attachment",
     "role": [
       "participant"
-  ]
+    ]
   }
 ]
