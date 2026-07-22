@@ -1,35 +1,177 @@
 ---
-import oceanBg from "../assets/background.png";
+import { Image } from "astro:assets";
+import galleryData from "../data/gallery.json";
+import placeholderImg from "../assets/background.png";
+
+// Import all images from the gallery folder.
+// Each new photo must be added here AND to gallery.json.
+// Naming: use a descriptive filename, e.g. "group-photo-day1.jpg".
+import sampleWorkshopPhoto from "../assets/gallery/sample-workshop-photo.png";
+
+const galleryImages: Record<string, ImageMetadata> = {
+  "sample-workshop-photo.png": sampleWorkshopPhoto,
+};
+
+const sortedGallery = [...galleryData].sort(
+  (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+);
 ---
 
 <section class="activities">
-    <div>
-        <h1>Activities</h1>
+  <div class="activities-header">
+    <h1>Activities</h1>
+    <p class="intro">
+      A collection of moments from the AI4Ocean Workshop 2026. Participants
+      are encouraged to share photos with a short caption — just email them to
+      <a href="mailto:wangs.coordinator@gmail.com">wangs.coordinator@gmail.com</a>
+      and we'll add them here.
+    </p>
+  </div>
+
+  {sortedGallery.length === 0 ? (
+    <div class="empty-state">
+      <p>No photos have been shared yet. Be the first to submit one!</p>
     </div>
+  ) : (
+    <div class="gallery-grid">
+      {sortedGallery.map((item) => (
+        <figure class="gallery-item">
+          <div class="gallery-image-wrap">
+            <Image
+              src={galleryImages[item.image] || placeholderImg}
+              alt={item.caption}
+              class="gallery-image"
+              widths={[400, 800]}
+              sizes="(max-width: 768px) 100vw, 33vw"
+            />
+          </div>
+          <figcaption class="gallery-caption">
+            <p class="caption-text">{item.caption}</p>
+            <p class="caption-meta">
+              <span class="submitter">📷 {item.submitter}</span>
+              <span class="date">{new Date(item.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}</span>
+            </p>
+          </figcaption>
+        </figure>
+      ))}
+    </div>
+  )}
 </section>
 
 <style>
+  .activities {
+    padding: 0 0.4rem;
+    padding-top: var(--header-h);
+    min-height: 50vh;
+    box-sizing: border-box;
+    width: 100%;
+    color: black;
+  }
+
+  .activities-header h1 {
+    max-width: min(100%, 500px);
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin: 0 0 0.5rem 0;
+  }
+
+  .intro {
+    font-size: 1.05rem;
+    color: #334155;
+    line-height: 1.5;
+    max-width: 650px;
+    margin-bottom: 2rem;
+  }
+
+  .intro a {
+    color: #0288d1;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .intro a:hover {
+    text-decoration: underline;
+  }
+
+  .empty-state {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: #64748b;
+    font-size: 1.1rem;
+  }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .gallery-item {
+    margin: 0;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+  }
+
+  .gallery-item:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+  }
+
+  .gallery-image-wrap {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    background: #e2e8f0;
+  }
+
+  .gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .gallery-caption {
+    padding: 0.8rem 1rem;
+  }
+
+  .caption-text {
+    font-size: 0.95rem;
+    color: #1e293b;
+    line-height: 1.4;
+    margin: 0 0 0.5rem 0;
+  }
+
+  .caption-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+    font-size: 0.8rem;
+    color: #64748b;
+    margin: 0;
+  }
+
+  .submitter {
+    font-weight: 500;
+  }
+
+  .date {
+    font-style: italic;
+  }
+
+  @media (min-width: 768px) {
     .activities {
-        padding: 0 0.4rem;
-        padding-top: var(--header-h);
-        min-height: 50vh;
-        box-sizing: border-box;
-        width: 100%;
-        color: black;
+      padding: 0 5rem;
+      padding-top: var(--header-h);
     }
 
-    .activities h1 {
-        max-width: min(100%, 500px);
-        font-size: 2.5rem;
-        font-weight: 900;
-        margin: 0;
+    .gallery-grid {
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 2rem;
     }
-    
-
-    @media (min-width: 768px) {
-        .activities {
-            padding: 0 5rem;
-            padding-top: var(--header-h);
-        }
-    }
+  }
 </style>
