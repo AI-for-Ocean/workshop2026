@@ -72,7 +72,7 @@
 - 14:20–14:40 — Lightning Talk — Maya Anjur-Dietrich (MIT) — Combining metagenomics and environmental data to map distributions of picocyanobacterial biofilms
 - 14:40–15:00 — Lightning Talk — Lauren Harvey (SIO, UCSD) — Southern Ocean Sea Ice Velocities and Transport with SWOT
 - 15:00–15:30 — Coffee Break
-- 15:30–15:50 — Lightning Talk — Hector Torres (JPL, NASA) — TBD
+- 15:30–15:50 — Lightning Talk — Levi Cai (University of Colorado Boulder) — TBD
 - 15:50–16:30 — Project Pitch Session — Each team pitches their project (5 min each)
 - 16:30–17:00 — Team Finalization — Confirm project teams and plans
 - 19:00–21:00 — Movie Night (default: Inception; email coordinator to propose alternatives)
