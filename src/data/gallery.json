@@ -1,5 +1,17 @@
 [
   {
+    "image": "ian-explaining-ecco-ml.jpg",
+    "caption": "Ian explaining the connection between ECCO and machine learning",
+    "submitter": "Jinbo Wang",
+    "date": "2026-07-23"
+  },
+  {
+    "image": "martin-spatiotemporal-ml-altimeter.jpg",
+    "caption": "Martin sharing his research on spatiotemporal machine learning representations of satellite altimeter measurements",
+    "submitter": "Jinbo Wang",
+    "date": "2026-07-23"
+  },
+  {
     "image": "team-formation-3.jpg",
     "caption": "Team formation",
     "submitter": "Jinbo Wang",
