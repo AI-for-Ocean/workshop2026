@@ -51,16 +51,16 @@ const sortedGallery = [...galleryData].sort(
 );
 ---
 
-<section class="activities">
-  <div class="activities-header">
-    <h1>Activities</h1>
-    <p class="intro">
-      A collection of moments from the AI4Ocean Workshop 2026. Participants
-      are encouraged to share photos with a short caption — just email them to
-      <a href="mailto:wangs.coordinator@gmail.com">wangs.coordinator@gmail.com</a>
-      and we'll add them here.
-    </p>
+<section class="activities" id="activities">
+  <div class="title">
+    <h2>Activities</h2>
   </div>
+  <p class="intro">
+    A collection of moments from the AI4Ocean Workshop 2026. Participants
+    are encouraged to share photos with a short caption — just email them to
+    <a href="mailto:wangs.coordinator@gmail.com">wangs.coordinator@gmail.com</a>
+    and we'll add them here.
+  </p>
 
   {sortedGallery.length === 0 ? (
     <div class="empty-state">
@@ -95,22 +95,20 @@ const sortedGallery = [...galleryData].sort(
 <style>
   .activities {
     padding: 0 0.4rem;
-    padding-top: var(--header-h);
-    min-height: 50vh;
+    margin: 0;
     box-sizing: border-box;
     width: 100%;
     color: black;
   }
 
-  .activities-header h1 {
-    max-width: min(100%, 500px);
-    font-size: 2.5rem;
+  .activities h2 {
+    font-size: 2rem;
     font-weight: 900;
-    margin: 0 0 0.5rem 0;
+    margin: 1rem 0 0.5rem 0;
   }
 
   .intro {
-    font-size: 1.05rem;
+    font-size: 1.2rem;
     color: #334155;
     line-height: 1.5;
     max-width: 650px;
@@ -200,7 +198,6 @@ const sortedGallery = [...galleryData].sort(
   @media (min-width: 768px) {
     .activities {
       padding: 0 5rem;
-      padding-top: var(--header-h);
     }
 
     .gallery-grid {
