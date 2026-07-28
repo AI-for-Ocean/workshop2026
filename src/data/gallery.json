@@ -1,5 +1,23 @@
 [
   {
+    "image": "tatsu-diffusion-model-lecture.jpg",
+    "caption": "Tatsu is giving a lecture on score-based diffusion model for satellite data assimilation.",
+    "submitter": "Jinbo Wang",
+    "date": "2026-07-28"
+  },
+  {
+    "image": "nik-justin-kade-hidden-layer.jpg",
+    "caption": "Nik and Justin were talking to Kade (in a hidden layer).",
+    "submitter": "Jinbo Wang",
+    "date": "2026-07-28"
+  },
+  {
+    "image": "aiden-explaining-something-serious.jpg",
+    "caption": "Aiden is explaining something serious.",
+    "submitter": "Jinbo Wang",
+    "date": "2026-07-28"
+  },
+  {
     "image": "nvidia-ml-discussion.jpg",
     "caption": "Discussions on ML for oceanography and earth sciences with Dr. Pritchard and Dr. Duran from NVIDIA.",
     "submitter": "Jinbo Wang",
