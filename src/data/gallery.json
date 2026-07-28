@@ -1,5 +1,11 @@
 [
   {
+    "image": "prep-visit-argo-lab.jpg",
+    "caption": "Prep to visit the Argo lab.",
+    "submitter": "Jinbo Wang",
+    "date": "2026-07-28"
+  },
+  {
     "image": "tatsu-diffusion-model-lecture.jpg",
     "caption": "Tatsu is giving a lecture on score-based diffusion model for satellite data assimilation.",
     "submitter": "Jinbo Wang",
