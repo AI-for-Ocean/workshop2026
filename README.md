@@ -133,9 +133,10 @@
 
 ## Wednesday, July 29
 
-- 9:00–10:00 — Morning Lecture — Jinbo Wang (TAMU) — Let's go nonlinear with SWOT
-- 10:00–10:30 — Project check-in (all teams)
-- 10:30–12:00 — Project work (or optional ad-hoc talks)
+- 9:00–10:00 — Morning Lecture — Eugenio Cutolo (Atalaia AI) — Introduction to Transformer
+- 10:00–10:30 — Talk — Scott Martin (University of Washington) — An introduction to GenDA
+- 10:30–11:00 — Project check-in (all teams)
+- 11:00–12:00 — Project work (or optional ad-hoc talks)
 - 12:00–13:30 — Lunch (on your own)
 - 13:30–16:00 — Project work / hackathon
 - 16:00–17:00 — Afternoon check-in (all teams)
@@ -145,7 +146,7 @@
 
 ## Thursday, July 30 — Final Project Presentations
 
-- 9:00–10:00 — Morning Lecture — TBD
+- 9:00–10:00 — Morning Lecture — Jinbo Wang (TAMU) — Let's go nonlinear with SWOT
 - 10:00–10:30 — Project check-in — Final progress update before presentations
 - 10:30–12:00 — Final Project Presentations — Each team presents results (20–30 min each including Q&A)
 - 12:00–13:30 — Lunch (on your own)
