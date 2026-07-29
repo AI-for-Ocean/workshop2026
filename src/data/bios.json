@@ -345,8 +345,8 @@
     "name": "Inès Larroche",
     "email": "ines.larroche@amphitrite.fr",
     "bio": "Ines Larroche is a second-year PhD student at LOPS (Laboratoire d'Oceanographie Physique et Spatiale) and Amphitrite, working on wave-current interactions. Her research investigates whether machine learning methods can statistically estimate the effects of surface waves on ocean currents. She will present a lightning talk on representing wave-current interactions with machine learning.",
-    "photo_filename": null,
-    "photo_source": "not_found",
+    "photo_filename": "Larroche-Ines.jpg",
+    "photo_source": "email_attachment",
     "role": [
       "participant"
     ]

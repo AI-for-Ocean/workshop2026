@@ -94,7 +94,8 @@
 - Fri Jul 24 — Georgy Manucharyan (UW) — Fundamentals of machine learning for oceanography
 - Mon Jul 27 — Justin Stopa (University of Hawaii at Manoa) — Introduction to SAR and the applications
 - Tue Jul 28 — Tatsu Monkman (NYU) — Using diffusion model for multivariable satellite data fusion
-- Wed Jul 29 — Jinbo Wang (TAMU) — Let's go nonlinear with SWOT
+- Wed Jul 29 — Eugenio Cutolo (Atalaia AI) — Introduction to Transformer
+- Thu Jul 30 — Jinbo Wang (TAMU) — Let's go nonlinear with SWOT
 
 **Weekend (July 25–26):** No formal sessions. Participants may work independently or explore Seattle.
 
@@ -102,7 +103,7 @@
 
 ## Thursday, July 30 — Final Project Presentations
 
-- 9:00–10:00 — Morning Lecture — TBD
+- 9:00–10:00 — Morning Lecture — Jinbo Wang (TAMU) — Let's go nonlinear with SWOT
 - 10:00–10:30 — Project check-in — Final progress update before presentations
 - 10:30–12:00 — Final Project Presentations — Each team presents results (20–30 min each including Q&A)
 - 12:00–13:30 — Lunch (on your own)
