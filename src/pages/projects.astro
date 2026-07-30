@@ -1,8 +1,6 @@
 ---
 import TopBar from "../components/TopBar.astro";
-import Welcome from "../components/Welcome.astro";
-import About from "../components/About.astro";
-import Sponsors from "../components/Sponsors.astro";
+import Projects from "../components/Projects.astro";
 import Footer from "../components/Footer.astro";
 ---
 
@@ -22,16 +20,12 @@ import Footer from "../components/Footer.astro";
 			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
 			rel="stylesheet"
 		/>
-		<title>AI4Ocean 2026</title>
+		<title>Projects</title>
 	</head>
 	<body>
 		<TopBar />
 
-		<Welcome />
-
-		<About />
-
-		<Sponsors />
+		<Projects />
 
 		<Footer />
 	</body>
@@ -51,7 +45,10 @@ import Footer from "../components/Footer.astro";
 	body {
 		width: 100%;
 		font-family: "Roboto", Arial, sans-serif;
-		scroll-padding-top: calc(var(--header-h) + 2rem);
+	}
+
+	body {
+		padding-top: calc(var(--header-h) + 2rem);
 	}
 
 	 @media (min-width: 768px) {
