@@ -8,7 +8,7 @@
     </button>
     <div class="nav-links" id="nav-links">
       <a href="/workshop2026/#about">About</a>
-      <a href="/workshop2026/#agenda">Agenda</a>
+      <a href="/workshop2026/agenda">Agenda</a>
       <a href="/workshop2026/activities">Activities</a>
       <a href="/workshop2026/team">Team</a>
       <a href="/workshop2026/#projects">Projects</a>
@@ -22,7 +22,7 @@
   const navLinks = document.getElementById("nav-links")!;
   const topbar = document.querySelector(".topbar")!;
 
-  const isSeparatePage = window.location.pathname.includes("activities") || window.location.pathname.includes("team");
+  const isSeparatePage = window.location.pathname.includes("activities") || window.location.pathname.includes("team") || window.location.pathname.includes("agenda");
   hamburger.addEventListener("click", () => {
     navLinks.classList.toggle("active");
   });
