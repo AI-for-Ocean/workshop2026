@@ -2,16 +2,24 @@
 import { Image } from "astro:assets";
 import projectData from "../data/projs.json";
 
-import thumb24bf9 from "../assets/thumbs/24bf9.png";
-import thumb9ba5b from "../assets/thumbs/9ba5b.png";
-import thumbac61ea from "../assets/thumbs/ac61ea.png";
-import thuma3efe from "../assets/thumbs/a3efe.png";
+import marlin from "../assets/thumbs/marlin.png";
+import noisysalmon from "../assets/thumbs/noisysalmon.png";
+import onetwenty from "../assets/thumbs/onetwenty.png";
+import orca from "../assets/thumbs/orca.png";
+import pixcie from "../assets/thumbs/pixcie.png";
+import sled from "../assets/thumbs/sled.png";
+import waves from "../assets/thumbs/waves.png";
+import wtsf from "../assets/thumbs/wtsf.png";
 
 const thumbnails = {
-  "24bf9.png": thumb24bf9,
-  "9ba5b.png": thumb9ba5b,
-  "ac61ea.png": thumbac61ea,
-  "a3efe.png": thuma3efe,
+  "marlin.png": marlin,
+  "noisysalmon.png": noisysalmon,
+  "onetwenty.png": onetwenty,
+  "orca.png": orca,
+  "pixcie.png": pixcie,
+  "sled.png": sled,
+  "waves.png": waves,
+  "wtsf.png": wtsf
 };
 ---
 
@@ -52,7 +60,7 @@ const thumbnails = {
 
   .project-card {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding: 0.2rem;
     border: 1px solid black;
     border-radius: 0.5rem;
@@ -60,20 +68,16 @@ const thumbnails = {
     justify-content: flex-start;
     gap: 0.5rem;
   }
-  
-  .project-desc {
-    
-  }
 
   .project-thumb {
-    width: 10rem;
-    height: 10rem;
-    object-fit: cover;
+    width: 20rem;
+    height: 20rem;
+    object-fit: fill;
   }
 
   @media (min-width: 768px) {
-    .projects-grid {
-      grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    .project-card {
+      flex-direction: row;
     }
 
     .projects {
