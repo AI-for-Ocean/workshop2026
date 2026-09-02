@@ -473,8 +473,8 @@
     "name": "Ou Wang",
     "email": "ou.wang@jpl.nasa.gov",
     "bio": "Ou Wang is a research scientist at NASA's Jet Propulsion Laboratory working on AI for Arctic sea ice forecasting and gap filling. His research combines machine learning with satellite remote sensing to improve sea ice prediction and analysis. He will present on AI for Arctic sea ice at the workshop.",
-    "photo_filename": null,
-    "photo_source": "not_found",
+    "photo_filename": "Wang-Ou.jpg",
+    "photo_source": "url: https://science.jpl.nasa.gov/media/images/OuWang.max-255x355.jpg",
     "role": [
       "participant"
     ]
