@@ -1,4 +1,5 @@
 ---
+import ShareButtons from "./ShareButtons.astro";
 const reportHref = `${import.meta.env.BASE_URL}docs/${encodeURIComponent("AI4Ocean Workshop 2026 Report Final.pdf")}`;
 ---
 
@@ -42,6 +43,7 @@ const reportHref = `${import.meta.env.BASE_URL}docs/${encodeURIComponent("AI4Oce
 
     <div class="report-link-wrap">
         <a href={reportHref} class="event-button" target="_blank" rel="noopener noreferrer">Workshop report</a>
+        <ShareButtons variant="light" />
     </div>
 </section>
 
@@ -66,6 +68,10 @@ const reportHref = `${import.meta.env.BASE_URL}docs/${encodeURIComponent("AI4Oce
     .report-link-wrap {
         margin-top: 1.5rem;
         margin-bottom: 0.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        align-items: center;
     }
 
     .event-button {
