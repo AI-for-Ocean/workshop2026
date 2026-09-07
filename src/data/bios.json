@@ -97,16 +97,6 @@
     ]
   },
   {
-    "name": "Jason Xavier Prochaska",
-    "email": "jxp@ucsc.edu",
-    "bio": "X. Prochaska is a professor at the University of California, Santa Cruz, working at the intersection of astronomy, data science, and machine learning. His research explores exponential growth in data-driven approaches to resolve ocean and atmospheric processes. He will present a lightning talk on riding the exponential to resolve ocean processes.",
-    "photo_filename": "Prochaska-Jason.jpg",
-    "photo_source": "not_found",
-    "role": [
-      "advisory"
-    ]
-  },
-  {
     "name": "Spencer Jones",
     "email": "spencerjones@tamu.edu",
     "bio": "Spencer Jones is a researcher at Texas A&M University interested in leveraging the time dimension for predicting ocean velocities and heat transport. His work focuses on inferring heat transport anomalies from sea surface variables in high-resolution climate model runs. He will present a lightning talk on inferring heat transport anomaly from sea surface variables.",
@@ -147,6 +137,16 @@
     "photo_source": "LinkedIn",
     "role": [
       "invited speaker"
+    ]
+  },
+  {
+    "name": "Jason Xavier Prochaska",
+    "email": "jxp@ucsc.edu",
+    "bio": "X. Prochaska is a professor at the University of California, Santa Cruz, working at the intersection of astronomy, data science, and machine learning. His research explores exponential growth in data-driven approaches to resolve ocean and atmospheric processes. He will present a lightning talk on riding the exponential to resolve ocean processes.",
+    "photo_filename": "Prochaska-Jason.jpg",
+    "photo_source": "not_found",
+    "role": [
+      "advisory"
     ]
   },
   {
@@ -246,16 +246,6 @@
     "bio": "Jeffrey Early is a senior research scientist at NWRA in Seattle working to connect theory and modeling in geophysical fluid dynamics to ocean observations.",
     "photo_filename": "Early-Jeffery.jpeg",
     "photo_source": "attachment",
-    "role": [
-      "participant"
-    ]
-  },
-  {
-    "name": "Robert Keenan Forney",
-    "email": "rforne2@lsu.edu",
-    "bio": "Robert Keenan Forney is a researcher at the U.S. Naval Research Laboratory with expertise in physical oceanography, including air-sea interactions related to tropical cyclones and ENSO. He has a current research need to investigate foundation modeling for the ocean-atmosphere system. He is a waived participant in the workshop.",
-    "photo_filename": null,
-    "photo_source": "not_found",
     "role": [
       "participant"
     ]
@@ -499,6 +489,16 @@
     "bio": "Yingjun Zhang is a postdoctoral scholar at the Scripps Institution of Oceanography, UC San Diego, whose current research focuses on SWOT, ocean eddies, and air-sea interactions.",
     "photo_filename": "Zhang-Yingjun.jpg",
     "photo_source": "attachment",
+    "role": [
+      "participant"
+    ]
+  },
+  {
+    "name": "Robert Keenan Forney",
+    "email": "rforne2@lsu.edu",
+    "bio": "Robert Keenan Forney is a researcher at the U.S. Naval Research Laboratory with expertise in physical oceanography, including air-sea interactions related to tropical cyclones and ENSO. He has a current research need to investigate foundation modeling for the ocean-atmosphere system. He is a waived participant in the workshop.",
+    "photo_filename": null,
+    "photo_source": "not_found",
     "role": [
       "participant"
     ]
