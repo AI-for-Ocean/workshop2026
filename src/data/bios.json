@@ -97,6 +97,39 @@
     ]
   },
   {
+    "name": "Jason Xavier Prochaska",
+    "email": "jxp@ucsc.edu",
+    "bio": "X. Prochaska is a professor at the University of California, Santa Cruz, working at the intersection of astronomy, data science, and machine learning. His research explores exponential growth in data-driven approaches to resolve ocean and atmospheric processes. He will present a lightning talk on riding the exponential to resolve ocean processes.",
+    "photo_filename": "Prochaska-Jason.jpg",
+    "photo_source": "not_found",
+    "role": [
+      "advisory"
+    ]
+  },
+  {
+    "name": "Spencer Jones",
+    "email": "spencerjones@tamu.edu",
+    "bio": "Spencer Jones is a researcher at Texas A&M University interested in leveraging the time dimension for predicting ocean velocities and heat transport. His work focuses on inferring heat transport anomalies from sea surface variables in high-resolution climate model runs. He will present a lightning talk on inferring heat transport anomaly from sea surface variables.",
+    "photo_filename": "Jones-Spencer.jpg",
+    "photo_source": "url: https://oceanography.tamu.edu/people/faculty/spencer-jones.html/_files/_images/_feature-images/dept-frontpagephoto-ocng02.jpg",
+    "role": [
+      "participant",
+      "advisory"
+    ],
+    "page_url": "https://oceanography.tamu.edu/people/faculty/spencer-jones.html"
+  },
+  {
+    "name": "Ou Wang",
+    "email": "ou.wang@jpl.nasa.gov",
+    "bio": "Ou Wang is a research scientist at NASA's Jet Propulsion Laboratory working on AI for Arctic sea ice forecasting and gap filling. His research combines machine learning with satellite remote sensing to improve sea ice prediction and analysis. He will present on AI for Arctic sea ice at the workshop.",
+    "photo_filename": "Wang-Ou.jpg",
+    "photo_source": "url: https://science.jpl.nasa.gov/media/images/OuWang.max-255x355.jpg",
+    "role": [
+      "participant",
+      "advisory"
+    ]
+  },
+  {
     "name": "Zhiwen Fan",
     "email": "zhiwenfan@tamu.edu",
     "bio": "Zhiwen Fan is a researcher at Texas A&M University working on ocean foundation model architecture. His research focuses on developing large-scale AI models for oceanographic applications, combining satellite observations with deep learning. He will give an invited talk on ocean foundation model architecture.",
@@ -321,17 +354,6 @@
     ]
   },
   {
-    "name": "Spencer Jones",
-    "email": "spencerjones@tamu.edu",
-    "bio": "Spencer Jones is a researcher at Texas A&M University interested in leveraging the time dimension for predicting ocean velocities and heat transport. His work focuses on inferring heat transport anomalies from sea surface variables in high-resolution climate model runs. He will present a lightning talk on inferring heat transport anomaly from sea surface variables.",
-    "photo_filename": "Jones-Spencer.jpg",
-    "photo_source": "url: https://oceanography.tamu.edu/people/faculty/spencer-jones.html/_files/_images/_feature-images/dept-frontpagephoto-ocng02.jpg",
-    "role": [
-      "participant"
-    ],
-    "page_url": "https://oceanography.tamu.edu/people/faculty/spencer-jones.html"
-  },
-  {
     "name": "Horim Kim",
     "email": "horimkim@mit.edu",
     "bio": "Horim Kim is a researcher at MIT working on connecting marine nitrous oxide emissions to ocean vertical transport. His research combines biogeochemical modeling with observational data to understand the role of ocean transport in greenhouse gas emissions. He will present a lightning talk at the workshop.",
@@ -402,14 +424,6 @@
     ]
   },
   {
-    "name": "Jason Xavier Prochaska",
-    "email": "jxp@ucsc.edu",
-    "bio": "X. Prochaska is a professor at the University of California, Santa Cruz, working at the intersection of astronomy, data science, and machine learning. His research explores exponential growth in data-driven approaches to resolve ocean and atmospheric processes. He will present a lightning talk on riding the exponential to resolve ocean processes.",
-    "photo_filename": "Prochaska-Jason.jpg",
-    "photo_source": "not_found",
-    "role": "participant"
-  },
-  {
     "name": "Arjit Seth",
     "email": "ajseth@utexas.edu",
     "bio": "Arjit Seth is a PhD student at the University of Texas at Austin with expertise in computational science and applied mathematics, focusing on scientific machine learning. His research applies adjoint-based stochastic parameterization methods to closure models in physical oceanography. He will present a lightning talk on adjoint-based stochastic parameterization for closure models.",
@@ -455,16 +469,6 @@
     "bio": "Nayana Venukanthan is a first-year PhD student in Oceanography at Texas A&M University under Jinbo Wang. She recently completed her B.S. in Computer Science at Cornell University and plans to develop machine learning methods for oceanographic applications during her PhD. She is a waived participant in the workshop.",
     "photo_filename": "Venukanthan-Nayana.jpg",
     "photo_source": "TAMU Staff",
-    "role": [
-      "participant"
-    ]
-  },
-  {
-    "name": "Ou Wang",
-    "email": "ou.wang@jpl.nasa.gov",
-    "bio": "Ou Wang is a research scientist at NASA's Jet Propulsion Laboratory working on AI for Arctic sea ice forecasting and gap filling. His research combines machine learning with satellite remote sensing to improve sea ice prediction and analysis. He will present on AI for Arctic sea ice at the workshop.",
-    "photo_filename": "Wang-Ou.jpg",
-    "photo_source": "url: https://science.jpl.nasa.gov/media/images/OuWang.max-255x355.jpg",
     "role": [
       "participant"
     ]
