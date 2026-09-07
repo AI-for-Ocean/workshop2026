@@ -427,8 +427,8 @@
     "name": "Arjit Seth",
     "email": "ajseth@utexas.edu",
     "bio": "Arjit Seth is a PhD student at the University of Texas at Austin with expertise in computational science and applied mathematics, focusing on scientific machine learning. His research applies adjoint-based stochastic parameterization methods to closure models in physical oceanography. He will present a lightning talk on adjoint-based stochastic parameterization for closure models.",
-    "photo_filename": null,
-    "photo_source": "not_found",
+    "photo_filename": "Seth-Arjit.png",
+    "photo_source": "url: https://oden.utexas.edu/media/directory-assets/profile-imgs/Arjit_Seth.png",
     "role": [
       "participant"
     ]
