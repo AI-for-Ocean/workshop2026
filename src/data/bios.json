@@ -387,8 +387,8 @@
     "name": "Sakib Mahmud",
     "email": "phy.sakib05@gmail.com",
     "bio": "Sakib Mahmud is a remote participant working on latent signature sensing and ocean current reconstruction from glider flight and science streams. His research focuses on combining physical oceanography with signal processing and machine learning methods. He will present a remote lightning talk on reconstructing ocean currents from glider data.",
-    "photo_filename": null,
-    "photo_source": "not_found",
+    "photo_filename": "Mahmud-Sakib.jpg",
+    "photo_source": "url: https://gerg.tamu.edu/images/people/sv3recovery.jpg",
     "role": [
       "participant"
     ]
