@@ -450,16 +450,6 @@
     ]
   },
   {
-    "name": "Hector Torres",
-    "email": "hector.torres.gutierrez@jpl.nasa.gov",
-    "bio": "Hector Torres is a research scientist at NASA's Jet Propulsion Laboratory working on satellite altimetry and ocean physics. His research focuses on SWOT and its applications for ocean dynamics. He will present a lightning talk at the workshop.",
-    "photo_filename": null,
-    "photo_source": "not_found",
-    "role": [
-      "participant"
-    ]
-  },
-  {
     "name": "Nayana Venukanthan",
     "email": "nsv9@tamu.edu",
     "bio": "Nayana Venukanthan is a first-year PhD student in Oceanography at Texas A&M University under Jinbo Wang. She recently completed her B.S. in Computer Science at Cornell University and plans to develop machine learning methods for oceanographic applications during her PhD. She is a waived participant in the workshop.",
@@ -497,16 +487,6 @@
     "photo_source": "not_found",
     "role": [
       "participant"
-    ]
-  },
-  {
-    "name": "Laure Zanna",
-    "email": "laure.zanna@nyu.edu",
-    "bio": "Laure Zanna is a professor at New York University leading the Computational Oceanography and Climate group. Her research aims to advance the fundamental understanding of ocean dynamics and its role in the climate system, developing theory, models, and algorithms including AI for ocean and climate physics. She leads the M2LInES project on multiscale machine learning in coupled Earth system modeling.",
-    "photo_filename": null,
-    "photo_source": "not_found",
-    "role": [
-      "guest"
     ]
   },
   {
