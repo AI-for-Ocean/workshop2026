@@ -1,6 +1,6 @@
 ---
 interface Props {
-  variant?: "light" | "dark";
+  variant?: "light" | "dark" | "header";
 }
 const { variant = "dark" } = Astro.props;
 
@@ -177,11 +177,24 @@ const encodedText = encodeURIComponent(shareText);
     border-color: #e2e8f0;
   }
 
+  .share-header .share-toggle {
+    background: transparent;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    padding: 0.4rem 0.75rem;
+    font-size: 0.95rem;
+  }
+
+  .share-header .share-toggle:hover,
+  .share-header .share-toggle[aria-expanded="true"] {
+    background: rgba(255, 255, 255, 0.14);
+  }
+
   .share-menu {
     position: absolute;
     top: calc(100% + 0.4rem);
     left: 0;
-    z-index: 20;
+    z-index: 1100;
     min-width: 10.5rem;
     flex-direction: column;
     background: #fff;
@@ -200,6 +213,11 @@ const encodedText = encodeURIComponent(shareText);
     transform: translateX(-50%);
   }
 
+  .share-header .share-menu {
+    left: auto;
+    right: 0;
+  }
+
   .share-menu a,
   .share-menu .copy-link {
     display: block;
@@ -208,7 +226,7 @@ const encodedText = encodeURIComponent(shareText);
     padding: 0.7rem 0.9rem;
     background: none;
     border: none;
-    color: inherit;
+    color: #0f172a !important;
     font: inherit;
     font-size: 0.95rem;
     text-decoration: none;

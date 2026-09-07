@@ -1,20 +1,27 @@
+---
+import ShareButtons from "./ShareButtons.astro";
+---
+
 <header class="topbar">
-  <a href="/workshop2026/"><h2>AI4Ocean</h2></a>
-  <nav class="navbar">
-    <button class="hamburger" id="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-    <div class="nav-links" id="nav-links">
-      <a href="/workshop2026/#about">About</a>
-      <a href="/workshop2026/agenda">Agenda</a>
-      <a href="/workshop2026/team">Team</a>
-      <a href="/workshop2026/#projects">Projects</a>
-      <a href="/workshop2026/activities">Activities</a>
-      <a href="/workshop2026/#sponsors">Sponsors</a>
-    </div>
-  </nav>
+  <a href="/workshop2026/" class="brand"><h2>AI4Ocean</h2></a>
+  <div class="topbar-right">
+    <nav class="navbar">
+      <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="/workshop2026/#about">About</a>
+        <a href="/workshop2026/agenda">Agenda</a>
+        <a href="/workshop2026/team">Team</a>
+        <a href="/workshop2026/#projects">Projects</a>
+        <a href="/workshop2026/activities">Activities</a>
+        <a href="/workshop2026/#sponsors">Sponsors</a>
+      </div>
+    </nav>
+    <ShareButtons variant="header" />
+  </div>
 </header>
 
 <script>
@@ -62,6 +69,12 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 0.4rem;
+  }
+
+  .topbar-right {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
   }
 
   .topbar h2 {
@@ -127,11 +140,11 @@
     background: #f5f5f5;
   }
 
-  .topbar a,
-  .topbar a:visited,
-  .topbar a:hover,
-  .topbar a:active,
-  .topbar a:focus {
+  .brand,
+  .brand:visited,
+  .brand:hover,
+  .brand:active,
+  .brand:focus {
     color: #fff;
     text-decoration: none;
   }
