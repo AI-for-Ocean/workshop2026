@@ -1,0 +1,138 @@
+---
+import oceanBg from "../assets/banner.png";
+---
+
+<section
+    class="welcome"
+    style={`background-image: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)), url(${oceanBg.src});`}
+>
+    <div>
+        <h1>AI4Ocean 2026 Workshop</h1>
+
+        <div class="meta-row">
+            <p class="meta">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                >
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"
+                    ></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                <span>20 - 31 July</span>
+            </p>
+
+            <button class="meta location-btn">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                >
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                    ></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>University of Washington, Seattle, Washington</span>
+            </button>
+        </div>
+
+        <p class="desc">
+            A two-week workshop on current research and development in AI for
+            oceans. Three-day diverse presentations. One week project-oriented hackathon. Career discussions with representatives from frontier companies and labs.
+        </p>
+    </div>
+</section>
+
+<script>
+    const locationBtn = document.querySelector(".location-btn");
+    const lat = 47.651334472418846;
+    const lng = -122.31268418902182;
+
+    locationBtn?.addEventListener("click", () => {
+        const mapsUrl = `https://www.google.com/maps/search/${lat},${lng}`;
+        window.open(mapsUrl, "_blank");
+    });
+</script>
+
+<style>
+    .welcome {
+        padding: 0 0.4rem;
+        padding-top: calc(var(--header-h) + 0.8rem);
+        min-height: 50vh;
+        background-size: cover;
+        background-position: center;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        place-items: left;
+        color: #fff;
+        text-align: left;
+        width: 100%;
+    }
+
+    .welcome h1 {
+        max-width: min(100%, 500px);
+        font-size: 2.5rem;
+        font-weight: 900;
+        margin: 0;
+    }
+
+    .desc {
+        max-width: min(100%, 500px);
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-top: 1rem;
+    }
+
+    .meta-row {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        max-width: min(100%, 500px);
+    }
+
+    .meta {
+        display: inline-flex;
+        align-items: center;
+        font-size: 1.3rem;
+        font-weight: 700;
+        padding: 0;
+        
+    }
+
+    .meta svg {
+        width: 1.2rem;
+        height: 1.2rem;
+        stroke: currentColor;
+        fill: none;
+        stroke-width: 2;
+        flex-shrink: 0;
+        padding-right: 0.4rem;
+    }
+
+    .location-btn {
+        background: none;
+        border: none;
+        color: inherit;
+        font: inherit;
+        font-size: 1.2rem;
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    .location-btn span {
+        max-width: inherit;
+        text-align: left;
+    }
+
+    @media (min-width: 768px) {
+        .welcome {
+            padding: 0 5rem;
+            padding-top: calc(var(--header-h) + 0.8rem);
+        }
+    }
+</style>

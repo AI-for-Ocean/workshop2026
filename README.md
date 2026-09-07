@@ -103,11 +103,15 @@
 - 16:00–17:00 — Afternoon check-in (all teams)
 - 17:00 — Optional informal discussion
 
-## Saturday, July 25
 
-- 9:00–17:00 — Details TBD
+**Morning Lecture Schedule:**
+- Thu Jul 23 — Steve Nerem (University of Colorado) — Introduction to Satellite Altimetry and Satellite Gravity for the Oceans
+- Fri Jul 24 — Georgy Manucharyan (UW) — Fundamentals of machine learning for oceanography
+- Mon Jul 27 — Justin Stopa (University of Hawaii at Manoa) — Introduction to SAR and the applications
+- Tue Jul 28 — Tatsu Monkman (NYU) — Using diffusion model for multivariable satellite data fusion
+- Wed Jul 29 — Eugenio Cutolo (Atalaia AI) — Introduction to Transformer
+- Thu Jul 30 — Jinbo Wang (TAMU) — Let's go nonlinear with SWOT
 
-## Sunday, July 26
 
 - 9:00–17:00 — Details TBD
 

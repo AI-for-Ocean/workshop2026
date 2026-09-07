@@ -1,0 +1,89 @@
+---
+import { Image } from "astro:assets";
+import projectData from "../data/projs.json";
+
+import marlin from "../assets/thumbs/marlin.png";
+import noisysalmon from "../assets/thumbs/noisysalmon.png";
+import onetwenty from "../assets/thumbs/onetwenty.png";
+import orca from "../assets/thumbs/orca.png";
+import pixcie from "../assets/thumbs/pixcie.png";
+import sled from "../assets/thumbs/sled.png";
+import waves from "../assets/thumbs/waves.png";
+import wtsf from "../assets/thumbs/wtsf.png";
+
+const thumbnails = {
+  "marlin.png": marlin,
+  "noisysalmon.png": noisysalmon,
+  "onetwenty.png": onetwenty,
+  "orca.png": orca,
+  "pixcie.png": pixcie,
+  "sled.png": sled,
+  "waves.png": waves,
+  "wtsf.png": wtsf
+};
+---
+
+<section class="projects" id="projects">
+  <h2>Projects</h2>
+  <div class="projects-grid">
+    {
+      projectData.map((project) => (
+        <div class="project-card">
+          <Image
+            src={thumbnails[project.thumb as keyof typeof thumbnails]}
+            alt={project.title}
+            class="project-thumb"
+          />
+          <div class="project-desc">
+            <h3>{project.title}</h3>
+            <p>{project.desc}</p>
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</section>
+
+<style>
+  .projects {
+    padding: 0.8rem 0.4rem;
+    margin-bottom: 0.2rem;
+    box-sizing: border-box;
+  }
+
+  .projects-grid {
+    display: grid;
+
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    padding: 0.2rem;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    align-items: start;
+    justify-content: flex-start;
+    gap: 0.5rem;
+  }
+
+  .project-thumb {
+    min-width: 20rem;
+    max-width: 20rem;
+    min-height: 20rem;
+    max-height: 20rem;
+    object-fit: fill;
+  }
+
+  @media (min-width: 768px) {
+    .project-card {
+      flex-direction: row;
+    }
+
+    .projects {
+      padding: 0.8rem 5rem;
+    }
+  }
+</style>

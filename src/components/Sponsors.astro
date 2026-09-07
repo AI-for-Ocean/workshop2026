@@ -1,0 +1,65 @@
+---
+import nasaLogo from "../assets/sponsors/nasa.webp";
+import nsfLogo from "../assets/sponsors/nsf.webp";
+import tamuLogo from "../assets/sponsors/tamu.png";
+import uwLogo from "../assets/sponsors/uw.png";
+---
+
+<section class="sponsors-section" id="sponsors">
+    <h2>Our Sponsors</h2>
+    <div class="sponsor-grid">
+        <div class="sponsor-card">
+            <img src={nasaLogo.src} alt="NASA logo" />
+            <p>NASA</p>
+        </div>
+        <div class="sponsor-card">
+            <img src={nsfLogo.src} alt="NSF logo" />
+            <p>NSF</p>
+        </div>
+        <div class="sponsor-card">
+            <img src={tamuLogo.src} alt="TAMU logo" />
+            <p>Texas A&M University</p>
+        </div>
+        <div class="sponsor-card">
+            <img src={uwLogo.src} alt="UW logo" />
+            <p>University of Washintgon</p>
+        </div>
+    </div>
+</section>
+
+<style>
+    .sponsors-section {
+        background: #eaf6ff;
+        padding: 1.8rem 2rem;
+        text-align: center;
+    }
+
+    .sponsor-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 15rem));
+        justify-content: center;
+        gap: 5rem;
+    }
+
+    .sponsor-card {
+        background: #fff;
+        border: 1px solid #dbeafe;
+        border-radius: 12px;
+        padding: 1rem;
+    }
+
+    .sponsor-card img {
+        width: 100%;
+        max-width: 10rem;
+        height: 10rem;
+        object-fit: contain;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .sponsor-card p {
+        margin: 0;
+        font-weight: 600;
+        color: #0f172a;
+    }
+</style>

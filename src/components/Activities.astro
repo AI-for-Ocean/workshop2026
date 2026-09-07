@@ -1,0 +1,240 @@
+---
+import { Image } from "astro:assets";
+import galleryData from "../data/gallery.json";
+import placeholderImg from "../assets/background.png";
+
+// Import all images from the gallery folder.
+// Each new photo must be added here AND to gallery.json.
+// Naming: use a descriptive filename, e.g. "group-photo-day1.jpg".
+import groupPhotoDay3 from "../assets/gallery/group-photo-day3.jpg";
+import teamFormation from "../assets/gallery/team-formation.jpg";
+import dinnerKoreanTofuHouse from "../assets/gallery/dinner-korean-tofu-house.jpeg";
+import manucharyanTeachingMl101 from "../assets/gallery/manucharyan-teaching-ml-101.jpg";
+import letsHack from "../assets/gallery/lets-hack.jpg";
+import laurenDiscussingSwotSeaIce from "../assets/gallery/lauren-discussing-swot-sea-ice.jpg";
+import ethanProposingStrategy from "../assets/gallery/ethan-proposing-strategy.jpg";
+import teamFormation2 from "../assets/gallery/team-formation-2.jpg";
+import teamFormation3 from "../assets/gallery/team-formation-3.jpg";
+import ianExplainingEccoMl from "../assets/gallery/ian-explaining-ecco-ml.jpg";
+import martinSpatiotemporalMlAltimeter from "../assets/gallery/martin-spatiotemporal-ml-altimeter.jpg";
+import inesHostingAiEthicsDiscussion from "../assets/gallery/ines-hosting-ai-ethics-discussion.jpg";
+import movieNightPizza from "../assets/gallery/movie-night-pizza.jpg";
+import neremAltimetrySatelliteGravityLecture from "../assets/gallery/nerem-altimetry-satellite-gravity-lecture.jpg";
+import pikePlaceLocalMinimum from "../assets/gallery/pike-place-local-minimum.jpg";
+import dinnerBoba1 from "../assets/gallery/dinner-boba-1.jpg";
+import dinnerBoba2 from "../assets/gallery/dinner-boba-2.jpg";
+import expeditionMtRainier from "../assets/gallery/expedition-mt-rainier.jpg";
+import expeditionMtRainier2 from "../assets/gallery/expedition-mt-rainier-2.jpg";
+import expeditionMtRainier3 from "../assets/gallery/expedition-mt-rainier-3.jpg";
+import stopaSarLecture from "../assets/gallery/stopa-sar-lecture.jpg";
+import duranEarthSystemMlLecture from "../assets/gallery/duran-earth-system-ml-lecture.jpg";
+import nvidiaMlDiscussion from "../assets/gallery/nvidia-ml-discussion.jpg";
+import argoLabTourRick from "../assets/gallery/argo-lab-tour-rick.jpg";
+import prepVisitArgoLab from "../assets/gallery/prep-visit-argo-lab.jpg";
+import tatsuDiffusionModelLecture from "../assets/gallery/tatsu-diffusion-model-lecture.jpg";
+import nikJustinKadeHiddenLayer from "../assets/gallery/nik-justin-kade-hidden-layer.jpg";
+import aidenExplainingSomethingSerious from "../assets/gallery/aiden-explaining-something-serious.jpg";
+import ai4oceanGotTalentSinging from "../assets/gallery/ai4ocean-got-talent-singing.jpg";
+import karaokeNightSinging from "../assets/gallery/karaoke-night-singing.jpg";
+import groupPhotoSecondWeek from "../assets/gallery/group-photo-second-week.png";
+import eugenioTransformerOceanFmLecture from "../assets/gallery/eugenio-transformer-ocean-fm-lecture.jpg";
+import scottMartinCareerPanel from "../assets/gallery/scott-martin-career-panel.jpg";
+import energyStillHigh from "../assets/gallery/energy-still-high.jpg";
+import suyueNayanaSeaIceLeads from "../assets/gallery/suyue-nayana-sea-ice-leads.jpg";
+import exploringUwCampus from "../assets/gallery/exploring-uw-campus.jpg";
+
+const galleryImages: Record<string, ImageMetadata> = {
+  "group-photo-day3.jpg": groupPhotoDay3,
+  "team-formation.jpg": teamFormation,
+  "dinner-korean-tofu-house.jpeg": dinnerKoreanTofuHouse,
+  "manucharyan-teaching-ml-101.jpg": manucharyanTeachingMl101,
+  "lets-hack.jpg": letsHack,
+  "lauren-discussing-swot-sea-ice.jpg": laurenDiscussingSwotSeaIce,
+  "ethan-proposing-strategy.jpg": ethanProposingStrategy,
+  "team-formation-2.jpg": teamFormation2,
+  "team-formation-3.jpg": teamFormation3,
+  "ian-explaining-ecco-ml.jpg": ianExplainingEccoMl,
+  "martin-spatiotemporal-ml-altimeter.jpg": martinSpatiotemporalMlAltimeter,
+  "ines-hosting-ai-ethics-discussion.jpg": inesHostingAiEthicsDiscussion,
+  "movie-night-pizza.jpg": movieNightPizza,
+  "nerem-altimetry-satellite-gravity-lecture.jpg": neremAltimetrySatelliteGravityLecture,
+  "pike-place-local-minimum.jpg": pikePlaceLocalMinimum,
+  "dinner-boba-1.jpg": dinnerBoba1,
+  "dinner-boba-2.jpg": dinnerBoba2,
+  "expedition-mt-rainier.jpg": expeditionMtRainier,
+  "expedition-mt-rainier-2.jpg": expeditionMtRainier2,
+  "expedition-mt-rainier-3.jpg": expeditionMtRainier3,
+  "stopa-sar-lecture.jpg": stopaSarLecture,
+  "duran-earth-system-ml-lecture.jpg": duranEarthSystemMlLecture,
+  "nvidia-ml-discussion.jpg": nvidiaMlDiscussion,
+  "ai4ocean-got-talent-singing.jpg": ai4oceanGotTalentSinging,
+  "karaoke-night-singing.jpg": karaokeNightSinging,
+  "argo-lab-tour-rick.jpg": argoLabTourRick,
+  "prep-visit-argo-lab.jpg": prepVisitArgoLab,
+  "tatsu-diffusion-model-lecture.jpg": tatsuDiffusionModelLecture,
+  "nik-justin-kade-hidden-layer.jpg": nikJustinKadeHiddenLayer,
+  "aiden-explaining-something-serious.jpg": aidenExplainingSomethingSerious,
+  "group-photo-second-week.png": groupPhotoSecondWeek,
+  "eugenio-transformer-ocean-fm-lecture.jpg": eugenioTransformerOceanFmLecture,
+  "scott-martin-career-panel.jpg": scottMartinCareerPanel,
+  "energy-still-high.jpg": energyStillHigh,
+  "suyue-nayana-sea-ice-leads.jpg": suyueNayanaSeaIceLeads,
+  "exploring-uw-campus.jpg": exploringUwCampus,
+};
+
+const sortedGallery = [...galleryData].sort(
+  (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+);
+---
+
+<section class="activities" id="activities">
+  <div class="title">
+    <h2>Activities</h2>
+  </div>
+  <p class="intro">
+    A collection of moments from the AI4Ocean Workshop 2026. Participants are encouraged to share photos with a short caption.
+  </p>
+
+  {sortedGallery.length === 0 ? (
+    <div class="empty-state">
+      <p>No photos have been shared yet. Be the first to submit one!</p>
+    </div>
+  ) : (
+    <div class="gallery-grid">
+      {sortedGallery.map((item) => (
+        <figure class="gallery-item">
+          <div class="gallery-image-wrap">
+            <Image
+              src={galleryImages[item.image] || placeholderImg}
+              alt={item.caption}
+              class="gallery-image"
+              widths={[400, 800]}
+              sizes="(max-width: 768px) 90vw, 30vw"
+            />
+          </div>
+          <figcaption class="gallery-caption">
+            <p class="caption-text">{item.caption}</p>
+            <p class="caption-meta">
+              <span class="submitter">📷 {item.submitter}</span>
+              <span class="date">{new Date(item.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}</span>
+            </p>
+          </figcaption>
+        </figure>
+      ))}
+    </div>
+  )}
+</section>
+
+<style>
+  .activities {
+    padding: 0.8rem 0.4rem;
+    margin-top: var(--header-h);
+    box-sizing: border-box;
+    width: 100%;
+    color: black;
+  }
+
+  .activities h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    margin: 1rem 0 0.5rem 0;
+  }
+
+  .intro {
+    font-size: 1.2rem;
+    color: #334155;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+  }
+
+  .intro a {
+    color: #0288d1;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .intro a:hover {
+    text-decoration: underline;
+  }
+
+  .empty-state {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: #64748b;
+    font-size: 1.1rem;
+  }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .gallery-item {
+    margin: 0;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+  }
+
+  .gallery-item:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+  }
+
+  .gallery-image-wrap {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    background: #e2e8f0;
+  }
+
+  .gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .gallery-caption {
+    padding: 0.8rem 1rem;
+  }
+
+  .caption-text {
+    font-size: 0.95rem;
+    color: #1e293b;
+    line-height: 1.4;
+    margin: 0 0 0.5rem 0;
+  }
+
+  .caption-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+    font-size: 0.8rem;
+    color: #64748b;
+    margin: 0;
+  }
+
+  .submitter {
+    font-weight: 500;
+  }
+
+  .date {
+    font-style: italic;
+  }
+
+  @media (min-width: 768px) {
+    .activities {
+      padding: 0.8rem 5rem;
+    }
+
+    .gallery-grid {
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 2rem;
+    }
+  }
+</style>
